@@ -52,6 +52,7 @@
 
         # List packages installed in system profile. To search by name, run:
         # $ nix-env -qaP | grep wget
+
         environment.systemPackages = with pkgs;
           [
             # _1password-gui
@@ -106,12 +107,10 @@
             mosh
             multitail
             neovim
-            nix-zsh-completions
             nodePackages.prettier
             nodejs_22
             obsidian
             oh-my-posh
-            oh-my-zsh
             pandoc
             perl
             pipx
@@ -150,12 +149,8 @@
             zip
             zoxide
             zsh
-            zsh-autosuggestions
-            zsh-completions
-            zsh-fast-syntax-highlighting
-            zsh-syntax-highlighting
-            zsh-vi-mode
             yabai
+            chroma
           ];
 
         homebrew = {
@@ -312,6 +307,16 @@
             })
           ];
 
+        # programs.zsh.oh-my-zsh.customPkgs = [
+        #   nix-zsh-completions
+        #   zsh-autosuggestions
+        #   zsh-completions
+        #   zsh-fast-syntax-highlighting
+        #   zsh-syntax-highlighting
+        #   zsh-vi-mode
+        #   zsh-lazyload
+        # ];
+
         system.activationScripts.applications.text =
           let
             env = pkgs.buildEnv {
@@ -333,34 +338,34 @@
             done
           '';
 
-        system.defaults = {
-          dock.autohide = true;
-          dock.persistent-apps = [
-            "/Applications/Setapp/Path Finder.app"
-            "/Applications/Safari.app"
-            "/Applications/Nix Apps/Google Chrome.app"
-            "/System/Applications/Mail.app"
-            "/Applications/Setapp/Spark Mail.app"
-            "/System/Applications/Messages.app"
-            "/Applications/WhatsApp.app"
-            "/System/Applications/System Settings.app"
-            "/Applications/1Password.app"
-            "/Applications/Fantastical.app"
-            "/Applications/OmniFocus.app"
-            "/Applications/Cardhop.app"
-            "/System/Applications/Music.app"
-            "/Applications/Notability.app"
-            "/Applications/Nix Apps/kitty.app"
-            "/Applications/kitty.app"
-            "/Applications/Citrix Workspace.app"
-            "/Applications/Nix Apps/Obsidian.app"
-            "/Applications/Parallels Desktop.app"
-            "/Applications/Transmission.app"
-            "/System/Applications/iPhone Mirroring.app"
-          ];
-          loginwindow.GuestEnabled = false;
-          NSGlobalDomain.AppleInterfaceStyle = "Dark";
-        };
+
+        # system.defaults = {
+        #   dock.autohide = true;
+        #   dock.persistent-apps = [
+        #     "/Applications/Setapp/Path Finder.app"
+        #     "/Applications/Safari.app"
+        #     "/Applications/Nix Apps/Google Chrome.app"
+        #     "/System/Applications/Mail.app"
+        #     "/Applications/Setapp/Spark Mail.app"
+        #     "/System/Applications/Messages.app"
+        #     "/Applications/WhatsApp.app"
+        #     "/System/Applications/System Settings.app"
+        #     "/Applications/1Password.app"
+        #     "/Applications/Fantastical.app"
+        #     "/Applications/OmniFocus.app"
+        #     "/Applications/Cardhop.app"
+        #     "/System/Applications/Music.app"
+        #     "/Applications/Notability.app"
+        #     "/Applications/Nix Apps/kitty.app"
+        #     "/Applications/kitty.app"
+        #     "/Applications/Citrix Workspace.app"
+        #     "/Applications/Nix Apps/Obsidian.app"
+        #     "/Applications/Parallels Desktop.app"
+        #     "/System/Applications/iPhone Mirroring.app"
+        #   ];
+        #   loginwindow.GuestEnabled = false;
+        #   NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        # };
 
         # Necessary for using flakes on this system.
         nix.settings.experimental-features = "nix-command flakes";
@@ -392,12 +397,6 @@
               enable = true;
               user = "chris";
               autoMigrate = true;
-              # taps = {
-              #   "homebrew/homebrew-core" = homebrew-core;
-              #   "homebrew/homebrew-cask" = homebrew-cask;
-              #   "homebrew/homebrew-bundle" = homebrew-bundle;
-              # };
-              # mutableTaps = false;
             };
           }
         ];
