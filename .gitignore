@@ -67,3 +67,4 @@ kitty/my-kitty-config
 skhd/skhdrc_example
 btop/btop.log
 nix/flake.lock
+zsh/.zshrc.zwc
