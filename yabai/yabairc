@@ -36,7 +36,7 @@ yabai -m config \
   top_padding 12 \
   window_animation_duration 0.0 \
   window_animation_easing ease_out_circ \
-  window_gap 06 \
+  window_gap 12 \
   window_opacity off \
   window_opacity_duration 0.0 \
   window_origin_display default \
@@ -88,6 +88,10 @@ yabai -m rule --add label="TradingView" app='^TradingView$' manage=off
 yabai -m rule --add label="Transmission" app='^Transmission$' manage=off
 yabai -m rule --add label="VLC" app="^VLC$" manage=off
 yabai -m rule --add label="WhatsApp" app="^WhatsApp$" manage=off # Problem
+yabai -m rule --add label="Folder Marker" app="^FolderMarker$" manage=off
+yabai -m rule --add label="OnlySwitch" app="^OnlySwitch$" manage=off
 yabai -m rule --apply
+
+borders >/dev/null 2>&1 &
 
 echo "yabai configuration loaded.."
