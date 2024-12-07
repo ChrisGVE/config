@@ -90,6 +90,7 @@ yabai -m rule --add label="VLC" app="^VLC$" manage=off
 yabai -m rule --add label="WhatsApp" app="^WhatsApp$" manage=off # Problem
 yabai -m rule --add label="Folder Marker" app="^FolderMarker$" manage=off
 yabai -m rule --add label="OnlySwitch" app="^OnlySwitch$" manage=off
+yabai -m rule --add label="Ice" app="^Ice$" manage=off
 yabai -m rule --apply
 
 echo "yabai configuration loaded.."
