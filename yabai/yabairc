@@ -92,6 +92,4 @@ yabai -m rule --add label="Folder Marker" app="^FolderMarker$" manage=off
 yabai -m rule --add label="OnlySwitch" app="^OnlySwitch$" manage=off
 yabai -m rule --apply
 
-borders >/dev/null 2>&1 &
-
 echo "yabai configuration loaded.."
