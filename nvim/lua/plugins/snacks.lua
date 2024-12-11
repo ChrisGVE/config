@@ -5,6 +5,13 @@ return {
   priority = 1000,
   lazy = false,
   opts = {
+    zen = {},
+    dim = {},
+    indent = {},
+    input = {},
+    scope = {},
+    scroll = {},
+    animate = {},
     bigfile = { enabled = true },
     notifier = { enabled = true },
     quickfile = { enabled = true },
