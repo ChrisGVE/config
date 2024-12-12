@@ -1,4 +1,5 @@
--- Snacks = require("snacks")
+Snacks = require("snacks")
+vim.ui.input = Snacks.input
 
 return {
   "folke/snacks.nvim",

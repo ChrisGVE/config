@@ -23,9 +23,9 @@ map("n", "<S-cr>", "O<Esc>", { desc = "Insert blank line above" })
 -- map("n", "N", "Nzzzv", { desc = "Previous search result" })
 
 -- Deactivate notification from <leader>n too (already exists under ui)
-map("n", "<leader>nn", function()
-  Snacks.notifier.hide()
-end, { desc = "Dismiss All Notification" })
+-- map("n", "<leader>nn", function()
+--   Snacks.notifier.hide()
+-- end, { desc = "Dismiss All Notification" })
 
 -- Smart-splits keymaps
 --

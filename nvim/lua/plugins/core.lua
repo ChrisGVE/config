@@ -1,16 +1,4 @@
 return {
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
-    },
-  },
-  -- {
-  --   "nvim-lualine/lualine.nvim",
-  --   setup = {
-  --     options = {
-  --       theme = "catppuccin",
-  --     },
-  --   },
-  -- },
+  { "folke/lazy.nvim", version = false },
+  { "LazyVim/LazyVim", version = false },
 }

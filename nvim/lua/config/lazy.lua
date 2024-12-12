@@ -17,7 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
-    { "LazyVim/LazyVim", branch = "main", import = "lazyvim.plugins" },
+    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import/override with your plugins
     { import = "plugins" },
   },
@@ -27,10 +27,10 @@ require("lazy").setup({
     lazy = false,
     -- It's recommended to leave version=false for now, since a lot the plugin that support versioning,
     -- have outdated releases, which may break your Neovim install.
-    version = nil, -- always use the latest git commit
+    version = false, -- always use the latest git commit
     -- version = "*", -- try installing the latest stable version for plugins that support semver
   },
-  install = { colorscheme = { "tokyonight", "habamax", "catppuccin", "dracula", "gruvbox-material" } },
+  install = { colorscheme = { "tokyonight", "habamax" } },
   checker = {
     enabled = true, -- check for plugin updates periodically
     notify = false, -- notify on update
@@ -51,9 +51,3 @@ require("lazy").setup({
     },
   },
 })
-
--- Change the behavior of which-key when creating shortcuts to buffers
-require("which-key.extras").bufname = function(buf)
-  local name = vim.api.nvim_buf_get_name(buf)
-  return name == "" and "[No Name]" or vim.fn.fnamemodify(name, ":t")
-end

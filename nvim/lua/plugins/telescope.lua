@@ -47,6 +47,7 @@ return {
       "nvim-telescope/telescope-project.nvim",
       "nvim-telescope/telescope-bibtex.nvim",
       "jvgrootveld/telescope-zoxide",
+      "fdschmidt93/telescope-egrepify.nvim",
     },
     config = function()
       require("telescope").load_extension("lazy_plugins")
@@ -60,6 +61,7 @@ return {
       require("telescope").load_extension("projects") -- this is for project.nvim
       require("telescope").load_extension("bibtex")
       require("telescope").load_extension("zoxide")
+      require("telescope").load_extension("egrepify")
     end,
     init = function()
       require("telescope").setup({
