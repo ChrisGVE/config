@@ -7,42 +7,42 @@
 # see this wiki page for information:
 #  - https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)#configure-scripting-addition
 #
-# yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
-# sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
 #
 
 # global settings
 yabai -m config \
-  active_window_opacity 1.0 \
-  auto_balance off \
-  bottom_padding 12 \
-  debug_output on \
-  display_arrangement_order default \
-  external_bar off:40:0 \
-  focus_follows_mouse off \
-  insert_feedback_color 0xffd75f5f \
-  layout bsp \
-  left_padding 12 \
-  menubar_opacity 1.0 \
-  mouse_action1 move \
-  mouse_action2 resize \
-  mouse_drop_action swap \
-  mouse_follows_focus on \
-  mouse_modifier fn \
-  normal_window_opacity 0.90 \
-  right_padding 12 \
-  split_ratio 0.50 \
-  split_type auto \
-  top_padding 12 \
-  window_animation_duration 0.0 \
-  window_animation_easing ease_out_circ \
-  window_gap 12 \
-  window_opacity off \
-  window_opacity_duration 0.0 \
-  window_origin_display default \
-  window_placement second_child \
-  window_shadow on \
-  window_zoom_persist on
+	active_window_opacity 1.0 \
+	auto_balance off \
+	bottom_padding 12 \
+	debug_output on \
+	display_arrangement_order default \
+	external_bar off:40:0 \
+	focus_follows_mouse off \
+	insert_feedback_color 0xffd75f5f \
+	layout bsp \
+	left_padding 12 \
+	menubar_opacity 1.0 \
+	mouse_action1 move \
+	mouse_action2 resize \
+	mouse_drop_action swap \
+	mouse_follows_focus on \
+	mouse_modifier fn \
+	normal_window_opacity 0.90 \
+	right_padding 12 \
+	split_ratio 0.50 \
+	split_type auto \
+	top_padding 12 \
+	window_animation_duration 0.0 \
+	window_animation_easing ease_out_circ \
+	window_gap 12 \
+	window_opacity off \
+	window_opacity_duration 0.0 \
+	window_origin_display default \
+	window_placement second_child \
+	window_shadow on \
+	window_zoom_persist on
 
 yabai -m rule --add label="1Password" app='^1Password$' manage=off
 yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
@@ -64,17 +64,20 @@ yabai -m rule --add label="Disk Utility" app="^Disk Utility$" manage=off
 yabai -m rule --add label="FaceTime" app="^FaceTime$" manage=off
 yabai -m rule --add label="Find My" app="^Find My$" manage=off
 yabai -m rule --add label="Finder" app='^Finder$' manage=off
+yabai -m rule --add label="Folder Marker" app="^FolderMarker$" manage=off
 yabai -m rule --add label="Habits" app="^Habits$" manage=off
+yabai -m rule --add label="Ice" app="^Ice$" manage=off
 yabai -m rule --add label="Karabiner-Elements" app="^Karabiner-Elements$" manage=off
 yabai -m rule --add label="Karabiner-EventViewer" app="^Karabiner-EventViewer$" manage=off
 yabai -m rule --add label="LuLu" app="^LuLu$" manage=off
 yabai -m rule --add label="Mail" app="^Mail$" manage=off
 yabai -m rule --add label="Messages" app="^Messages$" manage=off
 yabai -m rule --add label="Notes" app="^Notes$" manage=off
+yabai -m rule --add label="OnlySwitch" app="^OnlySwitch$" manage=off
+yabai -m rule --add label="PCalc" app="^PCalc$" manage=off
 yabai -m rule --add label="Parallels Desktop" app="^Parallels Desktop$" manage=off
 yabai -m rule --add label="Passwords" app="^Passwords$" manage=off
 yabai -m rule --add label="PathFinder" app='^Path Finder$' manage=off
-yabai -m rule --add label="PCalc" app="^PCalc$" manage=off
 yabai -m rule --add label="Photo Booth" app="^Photo Booth$" manage=off
 yabai -m rule --add label="Podcasts" app="^Podcasts$" manage=off
 yabai -m rule --add label="Preview" app="^Preview$" manage=off
@@ -84,13 +87,11 @@ yabai -m rule --add label="SF Symbols" app="^SF Symbols$" manage=off
 yabai -m rule --add label="Setapp" app="^Setapp$" manage=off
 yabai -m rule --add label="Settings" app='^System Settings$' manage=off
 yabai -m rule --add label="Shortcuts" app="^Shortcuts$" manage=off
+yabai -m rule --add label="Tot" app="^Tot$" manage=off
 yabai -m rule --add label="TradingView" app='^TradingView$' manage=off
 yabai -m rule --add label="Transmission" app='^Transmission$' manage=off
 yabai -m rule --add label="VLC" app="^VLC$" manage=off
 yabai -m rule --add label="WhatsApp" app="^WhatsApp$" manage=off # Problem
-yabai -m rule --add label="Folder Marker" app="^FolderMarker$" manage=off
-yabai -m rule --add label="OnlySwitch" app="^OnlySwitch$" manage=off
-yabai -m rule --add label="Ice" app="^Ice$" manage=off
 yabai -m rule --apply
 
 echo "yabai configuration loaded.."
