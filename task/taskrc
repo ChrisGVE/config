@@ -26,3 +26,115 @@ news.version=3.1.0
 include themes/catppuccin.theme
 
 weekstart=monday
+
+# defaults
+default.project=admin
+
+# Custom reports
+report.workdone.description=List of completed tasks in the work context
+report.workdone.columns=project,description.desc,end
+report.workdone.labels=Proj,Desc,Done
+report.workdone.sort=end-\/,project+
+report.workdone.filter=status:completed description!="fill standup forms"
+
+report.currentall.description=List of current tasks in the work context
+report.currentall.columns=id,entry.age,manual_priority,project,tags,description.desc,entry,due.relative,follow
+report.currentall.labels=ID,Age,P,Proj,Tag,Desc,Created,Due,Follow
+report.currentall.sort=manual_priority-,project+
+report.currentall.filter=status:pending
+
+report.current.description=List of current tasks in the work context
+report.current.columns=id,entry.age,manual_priority,priority,project,tags,description.desc,entry,due.relative,linear_issue_id,release,follow,depends,urgency,session
+report.current.labels=ID,Age,MP,P,Proj,Tag,Desc,Created,Due,Lin,Rel,Follow,Depends,Urg,Session
+report.current.sort=manual_priority-,priority-,project+
+report.current.filter=status:pending
+
+report.current-projects.description=List of current projects in work context
+report.current-projects.columns=project
+report.current-projects.labels=
+report.current-projects.sort=project+
+report.current-projects.filter=status:pending
+
+report.all-projects.description=List of current projects in work context
+report.all-projects.columns=project
+report.all-projects.labels=
+report.all-projects.sort=project+
+
+
+report.tmark.description=List of tasks to report
+report.tmark.columns=project,description.desc
+report.tmark.labels=Proj,Desc
+report.tmark.sort=project+
+report.tmark.filter=status:pending -idea
+
+report.tmark-done.description=List of tasks to report done
+report.tmark-done.columns=project,description.desc
+report.tmark-done.labels=Proj,Desc
+report.tmark-done.sort=project+
+report.tmark-done.filter=status:completed -idea
+
+report.tmark-next.description=List of tasks to report next
+report.tmark-next.columns=project,description.desc
+report.tmark-next.labels=Proj,Desc
+report.tmark-next.sort=project+\/
+report.tmark-next.filter=status:pending -idea +next
+
+report.tmark-yesterday.description=List of tasks completed yesterday
+report.tmark-yesterday.columns=project,description.desc
+report.tmark-yesterday.labels=Proj,Desc
+report.tmark-yesterday.sort=project+\/
+report.tmark-yesterday.filter=status:completed end:yesterday
+
+context.work.read=+work
+context.work.write=+work
+uda.reviewed.type=date
+uda.reviewed.label=Reviewed
+report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
+report._reviewed.columns=uuid
+report._reviewed.sort=reviewed+,modified+
+report._reviewed.filter=( reviewed.none: or reviewed.before:now-1week ) and ( +PENDING or +WAITING )
+context.home.read=+home
+context.home.write=+home
+context.temp.read=+temp
+context.temp.write=+temp
+
+#User defined attributes
+uda.follow.type=string
+uda.follow.label=follow
+uda.session.type=string
+uda.session.label=Session
+uda.follow.values=Y,N
+uda.manual_priority.type=numeric
+uda.manual_priority.label=Manual Priority
+uda.release.type=string
+uda.release.label=Release
+uda.linear_issue_id.type=string
+uda.linear_issue_id.label=Linear Issue ID
+
+#UserDefinedShortcuts
+uda.taskwarrior-tui.task-report.next.filter=status:pending
+uda.taskwarrior-tui.shortcuts.1=~/.config/taskwarrior-tui/shortcut-scripts/taskopen-annotation.sh
+uda.taskwarrior-tui.shortcuts.2=~/dev/dotfiles/scripts/__cycle_tmuxinator_projects.sh
+uda.taskwarrior-tui.shortcuts.3=~/dev/dotfiles/scripts/__github_issue_sync.sh
+uda.taskwarrior-tui.shortcuts.4=~/.config/taskwarrior-tui/shortcut-scripts/__cycle_priority.sh
+uda.taskwarrior-tui.shortcuts.5=~/.config/taskwarrior-tui/shortcut-scripts/__decrease_task_priority.sh
+uda.taskwarrior-tui.shortcuts.6=~/.config/taskwarrior-tui/shortcut-scripts/__increase_task_priority.sh
+uda.taskwarrior-tui.shortcuts.7=~/.config/taskwarrior-tui/shortcut-scripts/__annotate_with_note.sh
+uda.taskwarrior-tui.shortcuts.8=~/.config/taskwarrior-tui/shortcut-scripts/__annotate_with_new_note.sh
+uda.taskwarrior-tui.shortcuts.9=~/.config/taskwarrior-tui/shortcut-scripts/__toggle_kill_label.sh 
+
+#Taskwarrior tui overrides
+uda.taskwarrior-tui.task-report.jump-on-task-add=true
+context=work
+context.archive.read=+archive
+context.archive.write=+archive
+context.integration.read=+integration
+context.integration.write=+integration
+
+#Taskwarrior tui selection
+uda.taskwarrior-tui.selection.indicator=->
+uda.taskwarrior-tui.selection.bold=yes
+uda.taskwarrior-tui.selection.italic=no
+uda.taskwarrior-tui.selection.dim=yes
+uda.taskwarrior-tui.selection.blink=no
+uda.taskwarrior-tui.selection.reverse=yes
