@@ -187,11 +187,15 @@ sphinx-doc
 sqlfluff
 sqlite
 suite-sparse
+task
+taskopen
+taskwarrior-tui
 teensy_loader_cli
 terraform
 tesseract
 the_silver_searcher
 tidy-html5
+timewarrior
 tmux
 tree
 tree-sitter
@@ -199,6 +203,7 @@ unibilium
 universal-ctags
 unixodbc
 utf8proc
+uv
 viu
 webp
 wget

@@ -125,7 +125,6 @@ uda.taskwarrior-tui.shortcuts.9=~/.config/taskwarrior-tui/shortcut-scripts/__tog
 
 #Taskwarrior tui overrides
 uda.taskwarrior-tui.task-report.jump-on-task-add=true
-context=work
 context.archive.read=+archive
 context.archive.write=+archive
 context.integration.read=+integration
@@ -138,3 +137,4 @@ uda.taskwarrior-tui.selection.italic=no
 uda.taskwarrior-tui.selection.dim=yes
 uda.taskwarrior-tui.selection.blink=no
 uda.taskwarrior-tui.selection.reverse=yes
+context=home
