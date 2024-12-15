@@ -1,0 +1,4 @@
+return {
+  "ChrisGVE/tasktamer.nvim",
+  opts = {},
+}
