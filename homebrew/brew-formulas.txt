@@ -22,10 +22,12 @@ borders
 broot
 brotli
 btop
+busted
 c-ares
 ca-certificates
 cairo
 certifi
+chafa
 chroma
 clang-format
 cmake
@@ -51,6 +53,7 @@ fzy
 gcc
 gd
 gdbm
+gdk-pixbuf
 gettext
 gh
 ghostscript
@@ -99,6 +102,7 @@ libomp
 libpng
 libpq
 libraqm
+librsvg
 libsodium
 libssh2
 libtiff

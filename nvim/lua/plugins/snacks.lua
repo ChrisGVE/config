@@ -1,6 +1,7 @@
 local Snacks = require("snacks")
 vim.ui.input = Snacks.input
 
+-- local tm = require("tasktamer")
 local ltw = require("little-taskwarrior")
 
 return {
@@ -43,6 +44,7 @@ return {
         { pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 3, padding = 1 },
         { pane = 2, icon = " ", title = "Projects", section = "projects", indent = 3, padding = 1 },
         {
+
           pane = 2,
           icon = " ",
           title = "Git Status",

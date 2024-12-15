@@ -5,6 +5,8 @@ bat-extras
 black
 broot
 btop
+busted
+chafa
 chroma
 cmake
 cmake-docs
