@@ -27,10 +27,10 @@ return {
     msg_minutes_until = "Drink due in",
   },
   keys = {
-    { "<localleader>h", "", desc = "💧Hyrdate" },
-    { "<localleader>hn", "<cmd>HydrateNow<cr>", desc = "🥛 Hydrated!" },
-    { "<localleader>hd", "<cmd>HydrateDisable<cr>", desc = "🚫Disable hydration reminders" },
-    { "<localleader>he", "<cmd>HydrateEnable<cr>", desc = "💧Enable hydration reminders" },
-    { "<localleader>hw", "<cmd>HydrateWhen<cr>", desc = "⏲ Minutes until next drink" },
+    { "_h", "", desc = "💧Hyrdate" },
+    { "_hn", "<cmd>HydrateNow<cr>", desc = "🥛 Hydrated!" },
+    { "_hd", "<cmd>HydrateDisable<cr>", desc = "🚫Disable hydration reminders" },
+    { "_he", "<cmd>HydrateEnable<cr>", desc = "💧Enable hydration reminders" },
+    { "_hw", "<cmd>HydrateWhen<cr>", desc = "⏲ Minutes until next drink" },
   },
 }
