@@ -65,6 +65,7 @@ yabai -m rule --add label="FaceTime" app="^FaceTime$" manage=off
 yabai -m rule --add label="Find My" app="^Find My$" manage=off
 yabai -m rule --add label="Finder" app='^Finder$' manage=off
 yabai -m rule --add label="Folder Marker" app="^FolderMarker$" manage=off
+yabai -m rule --add label="Font Book" app="^Font Book$" manage=off
 yabai -m rule --add label="Habits" app="^Habits$" manage=off
 yabai -m rule --add label="Ice" app="^Ice$" manage=off
 yabai -m rule --add label="Karabiner-Elements" app="^Karabiner-Elements$" manage=off
@@ -92,6 +93,7 @@ yabai -m rule --add label="TradingView" app='^TradingView$' manage=off
 yabai -m rule --add label="Transmission" app='^Transmission$' manage=off
 yabai -m rule --add label="VLC" app="^VLC$" manage=off
 yabai -m rule --add label="WhatsApp" app="^WhatsApp$" manage=off # Problem
+yabai -m rule --add label="Keyboard Maestro" app="^Keyboard Maestro Editor" manage=off
 yabai -m rule --apply
 
 echo "yabai configuration loaded.."
