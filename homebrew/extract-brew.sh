@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 # Extracts the list installed brew formulae/casks to a file
 #
@@ -9,6 +9,6 @@
 
 # Update git repo with these changes
 cd ~/.config/homebrew || exit
-git add *
+git add .
 git commit -am "chore(brew): automatic update of the homebrew lists"
 git push
