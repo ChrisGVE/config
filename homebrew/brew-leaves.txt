@@ -32,6 +32,7 @@ httrack
 hub
 julia
 koekeishiya/formulae/yabai
+lazydocker
 lazygit
 lolcat
 luarocks

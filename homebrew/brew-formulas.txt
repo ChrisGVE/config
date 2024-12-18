@@ -83,6 +83,7 @@ jpeg-turbo
 jpeg-xl
 julia
 krb5
+lazydocker
 lazygit
 leptonica
 libarchive

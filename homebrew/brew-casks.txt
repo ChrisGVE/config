@@ -10,6 +10,7 @@ daisydisk
 devonagent
 devonthink
 discord
+docker
 dropbox
 epic-games
 espanso
