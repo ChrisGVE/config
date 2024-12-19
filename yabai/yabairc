@@ -46,6 +46,7 @@ yabai -m config \
 
 yabai -m rule --add label="1Password" app='^1Password$' manage=off
 yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
+yabai -m rule --add label="Alfred" app="^Alfred Preferences$" manage=off
 yabai -m rule --add label="Apple TV" app="^TV$" manage=off # Problem
 yabai -m rule --add label="Audio MIDI Setup" app="^Audio MIDI Setup$" manage=off
 yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
@@ -94,6 +95,7 @@ yabai -m rule --add label="Transmission" app='^Transmission$' manage=off
 yabai -m rule --add label="VLC" app="^VLC$" manage=off
 yabai -m rule --add label="WhatsApp" app="^WhatsApp$" manage=off # Problem
 yabai -m rule --add label="Keyboard Maestro" app="^Keyboard Maestro Editor" manage=off
+yabai -m rule --add label="Docker Desktop" app="^Docker Desktop$" manage=off
 yabai -m rule --apply
 
 echo "yabai configuration loaded.."
