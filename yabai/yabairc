@@ -93,8 +93,9 @@ yabai -m rule --add label="Tot" app="^Tot$" manage=off
 yabai -m rule --add label="TradingView" app='^TradingView$' manage=off
 yabai -m rule --add label="Transmission" app='^Transmission$' manage=off
 yabai -m rule --add label="VLC" app="^VLC$" manage=off
-yabai -m rule --add label="WhatsApp" app="^WhatsApp$" manage=off # Problem
-yabai -m rule --add label="Keyboard Maestro" app="^Keyboard Maestro Editor" manage=off
+yabai -m rule --add label="WhatsApp" app="^WhatsApp.*$" title="^WhatsApp.*$" \
+	role="AXWindow" subrole="AXStandardWindow" manage=off # Problem
+yabai -m rule --add label="Keyboard Maestro" app="^Keyboard Maestro$" manage=off
 yabai -m rule --add label="Docker Desktop" app="^Docker Desktop$" manage=off
 yabai -m rule --apply
 
