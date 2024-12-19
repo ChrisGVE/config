@@ -23,7 +23,7 @@ news.version=3.1.0
 #include solarized-dark-256.theme
 #include solarized-light-256.theme
 #include no-color.theme
-include themes/catppuccin.theme
+include ~/.config/task/themes/catppuccin.theme
 
 weekstart=monday
 
@@ -85,8 +85,6 @@ report.tmark-yesterday.labels=Proj,Desc
 report.tmark-yesterday.sort=project+\/
 report.tmark-yesterday.filter=status:completed end:yesterday
 
-context.work.read=+work
-context.work.write=+work
 uda.reviewed.type=date
 uda.reviewed.label=Reviewed
 report._reviewed.description=Tasksh review report.  Adjust the filter to your needs.
@@ -95,8 +93,6 @@ report._reviewed.sort=reviewed+,modified+
 report._reviewed.filter=( reviewed.none: or reviewed.before:now-1week ) and ( +PENDING or +WAITING )
 context.home.read=+home
 context.home.write=+home
-context.temp.read=+temp
-context.temp.write=+temp
 
 #User defined attributes
 uda.follow.type=string
@@ -137,4 +133,15 @@ uda.taskwarrior-tui.selection.italic=no
 uda.taskwarrior-tui.selection.dim=yes
 uda.taskwarrior-tui.selection.blink=no
 uda.taskwarrior-tui.selection.reverse=yes
-context=home
+context.config.read=project:config or +wezterm or +neovim or +yabai or +cli
+context.config.write=project:config
+context.python.read=+python
+context.python.write=+python
+context.neovim.read=project:config +neovim
+context.neovim.write=project:config +neovim
+context.wezterm.read=project:config +wezterm
+context.wezterm.write=project:config +wezterm
+context.learn.read=project:learn +edu
+context.learn.write=project:learn +edu
+context.apps.read=+apps
+context.apps.write=+apps
