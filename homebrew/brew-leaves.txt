@@ -1,3 +1,4 @@
+age
 ast-grep
 automake
 bat
@@ -54,6 +55,7 @@ prettierd
 pyenv
 pygments
 qmk/qmk/qmk
+rage
 reattach-to-user-namespace
 ripgrep
 ruby

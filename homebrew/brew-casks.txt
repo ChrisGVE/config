@@ -50,6 +50,7 @@ soundsource
 spamsieve
 steam
 tageditor
+taskwarrior-pomodoro
 tradingview
 transmission
 transmit
