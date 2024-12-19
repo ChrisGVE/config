@@ -1,9 +1,9 @@
 1password
 1password-cli
 adobe-acrobat-reader
-alacritty
 alfred
 backblaze
+bibdesk
 calibre
 chronosync
 daisydisk
@@ -29,6 +29,7 @@ karabiner-elements
 keyboard-maestro
 keycue
 kitty
+latexit
 logi-options+
 lulu
 mactex
@@ -41,6 +42,8 @@ omnigraffle
 omnioutliner
 omniplan
 only-switch
+parallels
+parallels-toolbox
 plus42-decimal
 qmk-toolbox
 setapp
@@ -51,6 +54,8 @@ spamsieve
 steam
 tageditor
 taskwarrior-pomodoro
+tex-live-utility
+texshop
 tradingview
 transmission
 transmit

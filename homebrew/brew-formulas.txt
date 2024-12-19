@@ -141,6 +141,7 @@ mas
 mbedtls@2
 mdloader
 metis
+miniupnpc
 mosh
 mpdecimal
 mpfr
@@ -204,6 +205,7 @@ the_silver_searcher
 tidy-html5
 timewarrior
 tmux
+transmission-cli
 tree
 tree-sitter
 unibilium

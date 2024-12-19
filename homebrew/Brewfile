@@ -1,0 +1,224 @@
+tap "felixkratz/formulae"
+tap "homebrew/bundle"
+tap "homebrew/services"
+tap "jesseduffield/lazydocker"
+tap "koekeishiya/formulae"
+tap "osx-cross/arm"
+tap "osx-cross/avr"
+tap "qmk/qmk"
+tap "shaunsingh/sfmono-nerd-font-ligaturized"
+brew "age"
+brew "ast-grep"
+brew "automake"
+brew "bat"
+brew "bat-extras"
+brew "black"
+brew "broot"
+brew "btop"
+brew "lua"
+brew "busted"
+brew "chafa"
+brew "chroma"
+brew "cmake"
+brew "cmake-docs"
+brew "curl"
+brew "php", restart_service: true
+brew "composer"
+brew "deno"
+brew "direnv"
+brew "docutils"
+brew "fd"
+brew "figlet"
+brew "findent"
+brew "fish"
+brew "fzf"
+brew "fzy"
+brew "gh"
+brew "git"
+brew "git-delta"
+brew "gitui"
+brew "glow"
+brew "gnu-sed"
+brew "go"
+brew "httrack"
+brew "hub"
+brew "utf8proc", args: ["HEAD"]
+brew "julia"
+brew "lazydocker"
+brew "lazygit"
+brew "lolcat"
+brew "luarocks"
+brew "node"
+brew "markdown-toc"
+brew "markdownlint-cli2"
+brew "mas"
+brew "mosh"
+brew "multitail"
+brew "neovim"
+brew "ocaml"
+brew "oh-my-posh"
+brew "opam"
+brew "pandoc"
+brew "perl"
+brew "pipx"
+brew "pnpm"
+brew "prettier"
+brew "prettierd"
+brew "pyenv"
+brew "pygments"
+brew "rage"
+brew "reattach-to-user-namespace"
+brew "ripgrep"
+brew "ruby"
+brew "rust"
+brew "rust-analyzer"
+brew "rustc-completion"
+brew "shfmt"
+brew "sphinx-doc", link: false
+brew "sqlfluff"
+brew "task"
+brew "taskopen"
+brew "taskwarrior-tui"
+brew "terraform"
+brew "the_silver_searcher"
+brew "timewarrior"
+brew "tmux"
+brew "transmission-cli"
+brew "tree"
+brew "universal-ctags"
+brew "uv"
+brew "viu"
+brew "wget"
+brew "yarn"
+brew "yazi"
+brew "yq"
+brew "zig"
+brew "zip"
+brew "zoxide"
+brew "zsh"
+brew "felixkratz/formulae/borders"
+brew "koekeishiya/formulae/yabai"
+brew "osx-cross/avr/avr-gcc@8"
+brew "qmk/qmk/qmk"
+cask "1password"
+cask "1password-cli"
+cask "adobe-acrobat-reader"
+cask "alfred"
+cask "backblaze"
+cask "bibdesk"
+cask "calibre"
+cask "chronosync"
+cask "daisydisk"
+cask "devonagent"
+cask "devonthink"
+cask "discord"
+cask "docker"
+cask "dropbox"
+cask "epic-games"
+cask "espanso"
+cask "firefox"
+cask "font-hack-nerd-font"
+cask "font-sf-mono-nerd-font-ligaturized"
+cask "font-symbols-only-nerd-font"
+cask "fork"
+cask "google-chrome"
+cask "google-drive"
+cask "grammarly-desktop"
+cask "iterm2"
+cask "jabra-direct"
+cask "jordanbaird-ice"
+cask "karabiner-elements"
+cask "keyboard-maestro"
+cask "keycue"
+cask "kitty"
+cask "latexit"
+cask "logi-options+"
+cask "lulu"
+cask "mactex"
+cask "miniconda"
+cask "moom"
+cask "notion"
+cask "obsidian"
+cask "omnifocus"
+cask "omnigraffle"
+cask "omnioutliner"
+cask "omniplan"
+cask "only-switch"
+cask "parallels"
+cask "parallels-toolbox"
+cask "plus42-decimal"
+cask "qmk-toolbox"
+cask "setapp"
+cask "sf-symbols"
+cask "snagit"
+cask "soundsource"
+cask "spamsieve"
+cask "steam"
+cask "tageditor"
+cask "taskwarrior-pomodoro"
+cask "tex-live-utility"
+cask "texshop"
+cask "tradingview"
+cask "transmission"
+cask "transmit"
+cask "trezor-suite"
+cask "vlc"
+cask "wezterm"
+cask "wins"
+cask "zed"
+mas "1Password for Safari", id: 1569813296
+mas "Actions", id: 1586435171
+mas "AdBlock Pro", id: 1018301773
+mas "AdGuard for Safari", id: 1440147259
+mas "Affinity Designer 2", id: 1616831348
+mas "Aiko", id: 1672085276
+mas "Audiobook Wizard", id: 460967298
+mas "AudioBookBinder", id: 413969927
+mas "Cardhop", id: 1290358394
+mas "Cheatsheet", id: 1468213484
+mas "Cityscapes", id: 1631153096
+mas "CleanMyDrive 2", id: 523620159
+mas "Coin Stats", id: 1387758574
+mas "Coin Stats", id: 1498417304
+mas "Darkroom", id: 953286746
+mas "Data Jar", id: 1453273600
+mas "Deliveries", id: 924726344
+mas "Developer", id: 640199958
+mas "Disk Speed Test", id: 425264550
+mas "Encrypto", id: 935235287
+mas "Fantastical", id: 975937182
+mas "Focus", id: 777233759
+mas "FolderMarker", id: 1012940117
+mas "Goodnotes", id: 1444383602
+mas "Grammarly for Safari", id: 1462114288
+mas "Ground News", id: 1324203419
+mas "HP Smart", id: 1474276998
+mas "iA Writer", id: 775737590
+mas "IconizeFolder", id: 6478772538
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
+mas "Kiwix", id: 997079563
+mas "Live Wallpaper", id: 531123879
+mas "Menu Box", id: 6463440793
+mas "NordVPN", id: 905953485
+mas "Notability", id: 360593530
+mas "Numbers", id: 409203825
+mas "OneDrive", id: 823766827
+mas "Pages", id: 409201541
+mas "PayPal Honey", id: 1472777122
+mas "PCalc", id: 403504866
+mas "Photomator", id: 1444636541
+mas "Reeder", id: 6475002485
+mas "Save to Medium", id: 1485294824
+mas "Shazam", id: 897118787
+mas "Shortery", id: 1594183810
+mas "ShutterCount", id: 720123827
+mas "SimpleumSafe", id: 1547771496
+mas "Slack", id: 803453959
+mas "Speedtest", id: 1153157709
+mas "Texifier", id: 458866234
+mas "The Unarchiver", id: 425424353
+mas "Tot", id: 1491071483
+mas "Userscripts-Mac-App", id: 1463298887
+mas "Xcode", id: 497799835
+mas "‎WhatsApp", id: 310633997

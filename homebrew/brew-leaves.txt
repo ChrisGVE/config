@@ -71,6 +71,7 @@ terraform
 the_silver_searcher
 timewarrior
 tmux
+transmission-cli
 tree
 universal-ctags
 utf8proc
