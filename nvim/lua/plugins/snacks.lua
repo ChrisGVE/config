@@ -25,7 +25,7 @@ return {
       sections = {
         {
           section = "terminal",
-          cmd = "figlet -f ~/.config/figlet/ansi_shadow 'LAZYVIM' | lolcat -F 0.3 -t -p 100 -f",
+          cmd = "figlet -f ~/.config/figlet_custom/ansi_shadow 'LAZYVIM' | lolcat -F 0.3 -t -p 100 -f",
           height = 6,
           padding = 1,
           align = "center",
