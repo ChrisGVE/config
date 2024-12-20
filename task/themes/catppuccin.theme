@@ -14,27 +14,29 @@ color.debug=blue
 color.completed=black
 color.deleted=red
 color.active=green
-color.recurring=blue
+color.recurring=magenta
 color.scheduled=white on green
 color.until=yellow
 color.blocked=black on white
-color.blocking=black on bright white
+color.blocking=black on blue
 
 # Project
 color.project.none=red
+color.project.config=black on magenta
+color.project.python=black on cyan
 
 # Priority
-color.uda.priority.H=bold white
-color.uda.priority.M=white
-color.uda.priority.L=
+color.uda.priority.H=bold cyan
+color.uda.priority.M=green
+color.uda.priority.L=blue
 
 # Tags
 color.tag.next=bold yellow
-color.tag.none=
+color.tag.none=red
 color.tagged=
 
 # Due
-color.due=red
+color.due=yellow
 color.due.today=red
 color.overdue=bold red
 
@@ -62,7 +64,7 @@ color.calendar.holiday=black on bright yellow
 color.calendar.overdue=bold white on bright red
 color.calendar.scheduled=green
 color.calendar.today=black on cyan
-color.calendar.weekend=black
+color.calendar.weekend=black on magenta
 color.calendar.weeknumber=bold blue
 
 # Command: sync

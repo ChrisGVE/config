@@ -1,6 +1,6 @@
 # [Created by task 3.1.0 12/13/2024 17:19:29]
 data.location=/Users/chris/.local/share/tasks
-news.version=3.1.0
+news.version=3.3.0
 
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and update location config as follows:
@@ -23,6 +23,7 @@ news.version=3.1.0
 #include solarized-dark-256.theme
 #include solarized-light-256.theme
 #include no-color.theme
+# include bubblegum-256.theme
 include ~/.config/task/themes/catppuccin.theme
 
 weekstart=monday
@@ -129,21 +130,23 @@ context.integration.write=+integration
 #Taskwarrior tui selection
 uda.taskwarrior-tui.selection.indicator=->
 uda.taskwarrior-tui.selection.bold=yes
-uda.taskwarrior-tui.selection.italic=no
+uda.taskwarrior-tui.selection.italic=yes
 uda.taskwarrior-tui.selection.dim=yes
 uda.taskwarrior-tui.selection.blink=no
 uda.taskwarrior-tui.selection.reverse=yes
-context.config.read=project:config or +wezterm or +neovim or +yabai or +cli
+context.config.read=project:config 
 context.config.write=project:config
 context.python.read=+python
 context.python.write=+python
-context.neovim.read=project:config +neovim
-context.neovim.write=project:config +neovim
-context.wezterm.read=project:config +wezterm
-context.wezterm.write=project:config +wezterm
-context.learn.read=project:learn +edu
-context.learn.write=project:learn +edu
+context.neovim.read=project:config.neovim
+context.neovim.write=project:config.neovim
+context.wezterm.read=project:config.wezterm
+context.wezterm.write=project:config.wezterm
+context.learn.read=+edu
+context.learn.write=+edu
 context.apps.read=+apps
 context.apps.write=+apps
 context.dev.read=+dev
 context.dev.write=+dev
+context.checkout.read=+checkout
+context.checkout.write=+checkout
