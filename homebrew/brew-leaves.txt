@@ -73,6 +73,7 @@ timewarrior
 tmux
 transmission-cli
 tree
+trippy
 universal-ctags
 utf8proc
 uv

@@ -208,6 +208,7 @@ tmux
 transmission-cli
 tree
 tree-sitter
+trippy
 unibilium
 universal-ctags
 unixodbc
