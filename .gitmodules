@@ -10,3 +10,6 @@
 [submodule "btop/themes/btop"]
 	path = btop/themes/btop
 	url = https://github.com/catppuccin/btop.git
+[submodule "gitui/gitui"]
+	path = gitui/gitui
+	url = https://github.com/catppuccin/gitui.git
