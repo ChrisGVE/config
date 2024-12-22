@@ -1,7 +1,11 @@
 local Snacks = require("snacks")
 vim.ui.input = Snacks.input
 
-local tm = require("tasktamer")
+local tm = nil
+
+if package.loaded["tasktamer"] then
+  tm = require("tasktamer")
+end
 -- local ltw = require("little-taskwarrior")
 
 return {
