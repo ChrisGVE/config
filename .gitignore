@@ -60,6 +60,7 @@ nvim/lazy-lock.json
 zsh/.zsh_sessions
 zsh/.zcompdump*
 zsh/.zsh_history
+zhs/.zprofile
 .DS_Store
 wezterm/color-ref.lua
 wezterm/example
