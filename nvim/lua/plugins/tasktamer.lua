@@ -1,4 +1,4 @@
-if vim.uv.fs_stat("~/dev/projects/plugins/tasktamer.nvim/lazy.lua") then
+if vim.fn.isdirectory("~/dev/projects/plugins/tasktamer.nvim") then
   return {
     "tasktamer.nvim",
     dev = true,

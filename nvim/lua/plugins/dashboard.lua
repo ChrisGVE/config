@@ -1,6 +1,8 @@
 local tm = nil
 
-if package.loaded["tasktamer"] then
+local isInstalled = pcall(require, "tasktamer")
+
+if isInstalled then
   tm = require("tasktamer")
 end
 -- local ltw = require("little-taskwarrior")
