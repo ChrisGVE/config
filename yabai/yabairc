@@ -97,6 +97,7 @@ yabai -m rule --add label="WhatsApp" app="^WhatsApp.*$" title="^WhatsApp.*$" \
 	role="AXWindow" subrole="AXStandardWindow" manage=off # Problem
 yabai -m rule --add label="Keyboard Maestro" app="^Keyboard Maestro$" manage=off
 yabai -m rule --add label="Docker Desktop" app="^Docker Desktop$" manage=off
+yabai -m rule --add label="RealVNC" app="^VNC Viewer$" manage=off
 yabai -m rule --apply
 
 echo "yabai configuration loaded.."
