@@ -61,6 +61,7 @@ transmission
 transmit
 trezor-suite
 vlc
+vnc-viewer
 wezterm
 wins
 zed
