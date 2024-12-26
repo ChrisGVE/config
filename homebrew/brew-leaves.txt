@@ -15,6 +15,7 @@ composer
 deno
 direnv
 docutils
+fastfetch
 fd
 felixkratz/formulae/borders
 figlet

@@ -41,6 +41,7 @@ dfu-programmer
 dfu-util
 direnv
 docutils
+fastfetch
 fd
 figlet
 findent
