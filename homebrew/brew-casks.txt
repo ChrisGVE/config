@@ -46,7 +46,6 @@ parallels
 parallels-toolbox
 plus42-decimal
 qmk-toolbox
-raindropio
 setapp
 sf-symbols
 snagit

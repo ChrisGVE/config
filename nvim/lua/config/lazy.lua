@@ -32,6 +32,8 @@ require("lazy").setup({
   },
   dev = {
     path = "~/dev/projects/plugins",
+    patterns = { "chrisgve" },
+    fallback = true,
   },
   install = { colorscheme = { "tokyonight", "habamax" } },
   checker = {
