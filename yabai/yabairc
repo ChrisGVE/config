@@ -62,6 +62,7 @@ yabai -m rule --add label="Contacts" app="^Contacts$" manage=off
 yabai -m rule --add label="DEVONagent Pro" app="^DEVONagent Pro$" manage=off
 yabai -m rule --add label="Daisy Disk" app="^DaisyDisk$" manage=off
 yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
+yabai -m rule --add label="Discord" app="^Discord$" manage=off
 yabai -m rule --add label="Disk Utility" app="^Disk Utility$" manage=off
 yabai -m rule --add label="Docker Desktop" app="^Docker Desktop$" manage=off
 yabai -m rule --add label="FaceTime" app="^FaceTime$" manage=off
@@ -71,6 +72,7 @@ yabai -m rule --add label="Folder Marker" app="^FolderMarker$" manage=off
 yabai -m rule --add label="Font Book" app="^Font Book$" manage=off
 yabai -m rule --add label="Habits" app="^Habits$" manage=off
 yabai -m rule --add label="Ice" app="^Ice$" manage=off
+yabai -m rule --add label="iStat Menus" app="^iStat Menus$" manage=off
 yabai -m rule --add label="Karabiner-Elements" app="^Karabiner-Elements$" manage=off
 yabai -m rule --add label="Karabiner-EventViewer" app="^Karabiner-EventViewer$" manage=off
 yabai -m rule --add label="Keyboard Maestro" app="^Keyboard Maestro$" manage=off

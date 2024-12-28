@@ -19,6 +19,7 @@ font-hack-nerd-font
 font-sf-mono-nerd-font-ligaturized
 font-symbols-only-nerd-font
 fork
+ghostty
 google-chrome
 google-drive
 grammarly-desktop
