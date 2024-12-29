@@ -35,6 +35,7 @@ logi-options+
 lulu
 mactex
 miniconda
+monarch
 moom
 notion
 obsidian
