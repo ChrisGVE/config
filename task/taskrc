@@ -152,4 +152,4 @@ context.python.read=+python
 context.python.write=+python
 context.wezterm.read=+wezterm
 context.wezterm.write=+wezterm
-context=neovim
+context=wezterm
