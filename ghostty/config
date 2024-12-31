@@ -1,0 +1,14 @@
+font-family="Operator Mono SSm Lig"
+font-feature=calt
+font-feature=liga
+font-feature=dlig
+
+font-style=Light
+font-style-bold=Bold
+font-style-italic=Italic
+font-style-bold-italic=Bold Italic
+
+font-size=16
+
+theme=catppuccin-mocha
+
