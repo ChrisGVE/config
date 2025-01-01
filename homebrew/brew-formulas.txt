@@ -200,6 +200,7 @@ task
 taskopen
 taskwarrior-tui
 teensy_loader_cli
+television
 terraform
 tesseract
 the_silver_searcher

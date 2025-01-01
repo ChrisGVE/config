@@ -68,6 +68,7 @@ sphinx-doc
 sqlfluff
 taskopen
 taskwarrior-tui
+television
 terraform
 the_silver_searcher
 timewarrior
