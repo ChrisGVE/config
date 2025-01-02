@@ -217,6 +217,7 @@ unixodbc
 utf8proc
 uv
 viu
+vttest
 webp
 wget
 xorgproto

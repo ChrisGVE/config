@@ -80,6 +80,7 @@ universal-ctags
 utf8proc
 uv
 viu
+vttest
 wget
 yarn
 yazi
