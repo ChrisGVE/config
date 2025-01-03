@@ -96,6 +96,7 @@ libdeflate
 libevent
 libftdi
 libgit2
+libgit2@1.8
 libidn
 libidn2
 libimagequant

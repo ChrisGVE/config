@@ -1,6 +1,6 @@
 return {
   -- { dir = "~/dev/projects/plugins/present.nvim" },
-  { "present.nvim", dev = true },
+  { "present.nvim", dev = true, enabled = false },
   {
     "chrisgve/tasktamer.nvim",
     dev = true,
