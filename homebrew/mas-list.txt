@@ -51,7 +51,7 @@
 1586435171  Actions                        (3.5.0)
 1547771496  SimpleumSafe                   (3.5.5)
 409183694   Keynote                        (14.3)
-1444636541  Photomator                     (3.4.5)
+1444636541  Photomator                     (3.4.6)
 1485294824  Save to Medium                 (1.0)
 531123879   Live Wallpaper                 (2.6)
 1444383602  Goodnotes                      (6.6.0)

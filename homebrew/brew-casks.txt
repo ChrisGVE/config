@@ -62,6 +62,7 @@ tradingview
 transmission
 transmit
 trezor-suite
+via
 vlc
 vnc-viewer
 wezterm
