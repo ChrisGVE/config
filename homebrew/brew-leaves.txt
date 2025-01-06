@@ -36,7 +36,6 @@ julia
 koekeishiya/formulae/yabai
 lazydocker
 lazygit
-libgit2
 lolcat
 luarocks
 markdown-toc
@@ -67,6 +66,7 @@ rustc-completion
 shfmt
 sphinx-doc
 sqlfluff
+tabiew
 taskopen
 taskwarrior-tui
 television

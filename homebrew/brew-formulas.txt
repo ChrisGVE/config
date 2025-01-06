@@ -95,7 +95,6 @@ libblastrampoline
 libdeflate
 libevent
 libftdi
-libgit2
 libgit2@1.8
 libidn
 libidn2
@@ -197,6 +196,7 @@ sphinx-doc
 sqlfluff
 sqlite
 suite-sparse
+tabiew
 task
 taskopen
 taskwarrior-tui
