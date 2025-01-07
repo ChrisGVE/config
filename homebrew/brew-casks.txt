@@ -68,3 +68,4 @@ vnc-viewer
 wezterm
 wins
 zed
+zen-browser
