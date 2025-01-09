@@ -36,6 +36,7 @@ julia
 koekeishiya/formulae/yabai
 lazydocker
 lazygit
+lnav
 lolcat
 luarocks
 markdown-toc

@@ -126,6 +126,7 @@ libyaml
 libzip
 little-cms2
 llvm
+lnav
 lolcat
 lpeg
 lua

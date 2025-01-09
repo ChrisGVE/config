@@ -21,7 +21,6 @@
 408981434   iMovie                         (10.4.3)
 1468213484  Cheatsheet                     (5.0.2)
 1324203419  Ground News                    (3.0.3)
-823766827   OneDrive                       (24.226.1110)
 6739710035  BarMarks - Menu Bar Bookmarks  (1.2)
 460967298   Audiobook Wizard               (5.2)
 1569813296  1Password for Safari           (8.10.56)
