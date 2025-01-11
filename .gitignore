@@ -70,3 +70,6 @@ btop/btop.log
 nix/flake.lock
 zsh/.zshrc.zwc
 zsh/.zcompcache/brew_all_commands
+zsh/.zshrc.new
+zsh/.zshrc.pre-oh-my-zsh
+zsh/.zshrc.pre-oh-my-zsh-2025-01-10_08-31-30
