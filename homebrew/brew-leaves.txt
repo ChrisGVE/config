@@ -45,6 +45,7 @@ mas
 mosh
 multitail
 neovim
+nushell
 ocaml
 oh-my-posh
 opam
