@@ -4,7 +4,6 @@ automake
 bat
 bat-extras
 black
-broot
 btop
 busted
 chafa
@@ -92,3 +91,8 @@ zig
 zip
 zoxide
 zsh
+zsh-autocomplete
+zsh-autosuggestions
+zsh-fast-syntax-highlighting
+zsh-syntax-highlighting
+zsh-vi-mode
