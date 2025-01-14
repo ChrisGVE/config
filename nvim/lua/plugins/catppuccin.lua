@@ -10,6 +10,7 @@ return {
       styles = {
         numbers = { "italic" },
       },
+      integrations = { blink_cmp = true },
     })
   end,
 }
