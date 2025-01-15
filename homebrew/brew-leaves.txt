@@ -29,6 +29,7 @@ gitui
 glow
 gnu-sed
 go
+helix
 httrack
 hub
 julia

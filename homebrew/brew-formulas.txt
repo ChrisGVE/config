@@ -70,6 +70,7 @@ go
 gpatch
 graphite2
 harfbuzz
+helix
 hid_bootloader_cli
 hidapi
 highway
