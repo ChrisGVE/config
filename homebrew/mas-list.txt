@@ -46,7 +46,7 @@
 425264550   Disk Speed Test                (3.4.2)
 924726344   Deliveries                     (3.2.4)
 6463440793  Menu Box                       (2024.3.7)
-975937182   Fantastical                    (4.0.3)
+975937182   Fantastical                    (4.0.4)
 1586435171  Actions                        (3.5.1)
 1547771496  SimpleumSafe                   (3.5.5)
 409183694   Keynote                        (14.3)
