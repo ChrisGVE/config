@@ -1,3 +1,5 @@
+local LazyVim = require("lazyvim")
+
 return {
   recommended = function()
     return LazyVim.extras.wants({
@@ -8,7 +10,12 @@ return {
   {
     "OXY2DEV/markview.nvim",
     lazy = true, -- false Recommended
-    ft = "markdown", -- If you decide to lazy-load anyway
+    ft = { "markdown", "norg", "rmd", "org", "vimwiki", "Avante" }, -- If you decide to lazy-load anyway
+    opts = {
+      filetypes = { "markdown", "norg", "rmd", "org", "vimwiki", "Avante" },
+      buf_ignore = {},
+      max_length = 99999,
+    },
     keys = {},
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
