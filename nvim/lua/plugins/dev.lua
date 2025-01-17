@@ -2,20 +2,22 @@ return {
   { dir = "~/dev/projects/plugins/present.nvim" },
   { "present.nvim", dev = true, enabled = false },
   {
-    "chrisgve/tasktamer.nvim",
+    "chrisgve/taskforge.nvim",
     dev = true,
     config = function()
-      require("tasktamer").setup({ --- configuration for the Dashboard
+      require("taskforge").setup({ --- configuration for the Dashboard
         dashboard = {
-          --- List of columns to be displayed
-          columns = {
-            "project",
-            "description",
-            "due",
-            "urgency",
+          format = {
+            --- List of columns to be displayed
+            columns = {
+              "project",
+              "description",
+              "due",
+              "urgency",
+            },
           },
           --- List of replacements when getting lines for dashboard
-          project_replacements = {
+          project_abbreviations = {
             ["neovim."] = "nvim.",
             ["config."] = "cfg.",
             ["python."] = "py.",
@@ -23,7 +25,7 @@ return {
             ["devtools."] = "dev.",
             ["wezterm."] = "wzt.",
             ["work."] = "wk.",
-            ["personal."] = "pers.",
+            ["personal."] = "p.",
           },
         },
       })

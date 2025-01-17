@@ -1,13 +1,8 @@
-local Snacks = require("snacks")
-
-Snacks.dashboard.have_plugin("tasktamer")
+local Taskforge = require("taskforge")
 
 return {
   "folke/snacks.nvim",
-  dependencies = {
-    "chrisgve/tasktamer.nvim",
-  },
-  priority = 5000,
+  priority = 1000,
   lazy = false,
   opts = {
     dashboard = {
@@ -19,16 +14,7 @@ return {
           padding = 1,
           align = "center",
         },
-        -- {
-        --   icon = "",
-        --   title = "Tasks",
-        --   pane = 2,
-        --   text = function()
-        --     return require("tasktamer").get_snacks_dashboard_tasks(56, "dir", "special")
-        --   end,
-        --   indent = 3,
-        --   height = 10,
-        -- },
+        Taskforge.get_snacks_dashboard_tasks(),
         { icon = " ", title = "Keymaps", section = "keys", indent = 3, gap = 1, padding = 1, pane = 1 },
         { pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 3, padding = 1 },
         { pane = 2, icon = " ", title = "Projects", section = "projects", indent = 3, padding = 1 },
@@ -40,11 +26,6 @@ return {
           enabled = function()
             return Snacks.git.get_root() ~= nil
           end,
-          -- enabled = function()
-          --   print(Snacks.git.get_root())
-          --   local obj = vim.system({ "git", "rev-parse", "--is-inside-work-tree" }):wait()
-          --   return obj.code == 0
-          -- end,
           cmd = "hub status --short --branch --renames",
           height = 5,
           padding = 1,
