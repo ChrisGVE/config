@@ -2,6 +2,8 @@
 data.location=/Users/chris/.local/share/tasks
 news.version=3.3.0
 
+verbose=blank,footnote,label,new-id,affected,edit,special,project,sync,unwait
+
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and update location config as follows:
 
