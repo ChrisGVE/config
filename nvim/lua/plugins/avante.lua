@@ -3,15 +3,45 @@ return {
   event = "VeryLazy",
   lazy = false,
   version = false, -- set this to "*" if you want to always pull the latest change, false to update on release
+  keys = {
+    { "_a", "", desc = "avante" },
+    {
+      "_aa",
+      function()
+        require("avante.api").ask()
+      end,
+      desc = "avante: ask",
+      mode = { "n", "v" },
+    },
+    {
+      "_ae",
+      function()
+        require("avante.api").edit()
+      end,
+      desc = "avante: edit",
+      mode = { "n", "v" },
+    },
+    {
+      "_ar",
+      function()
+        require("avante.api").refresh()
+      end,
+      desc = "avante: refresh",
+      mode = "v",
+    },
+    {
+      "_af",
+      function()
+        require("avante.api").focus()
+      end,
+      desc = "avante: focus",
+      mode = { "n", "v" },
+    },
+  },
   opts = {
+    debug = true,
     provider = "claude",
     auto_suggestions_provider = "claude",
-    claude = {
-      endpoint = "https://api.anthropic.com",
-      model = "claude-3-5-sonnet-20241022",
-      temperature = 0,
-      max_tokens = 4096,
-    },
     dual_boost = {
       enabled = false,
     },
