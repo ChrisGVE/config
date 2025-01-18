@@ -29,7 +29,6 @@ jordanbaird-ice
 karabiner-elements
 keyboard-maestro
 keycue
-kitty
 latexit
 logi-options+
 lulu
