@@ -14,7 +14,7 @@ sudo yabai --load-sa
 # global settings
 yabai -m config \
 	active_window_opacity 1.0 \
-	auto_balance off \
+	auto_balance on \
 	bottom_padding 12 \
 	left_padding 12 \
 	right_padding 18 \
@@ -31,8 +31,8 @@ yabai -m config \
 	mouse_action2 resize \
 	mouse_drop_action swap \
 	mouse_follows_focus on \
-	mouse_modifier fn \
-	normal_window_opacity 0.90 \
+	mouse_modifier cmd \
+	normal_window_opacity 0.70 \
 	split_ratio 0.50 \
 	split_type auto \
 	window_animation_duration 0.0 \

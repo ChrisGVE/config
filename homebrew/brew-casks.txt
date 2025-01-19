@@ -2,6 +2,7 @@
 1password-cli
 adobe-acrobat-reader
 alfred
+anytype
 backblaze
 bibdesk
 calibre
@@ -20,6 +21,7 @@ font-sf-mono-nerd-font-ligaturized
 font-symbols-only-nerd-font
 fork
 ghostty
+gimp
 google-chrome
 google-drive
 grammarly-desktop
@@ -31,11 +33,13 @@ keyboard-maestro
 keycue
 latexit
 logi-options+
+logseq
 lulu
 mactex
 miniconda
 monarch
 moom
+nextcloud
 notion
 obsidian
 omnifocus
@@ -57,6 +61,7 @@ tageditor
 taskwarrior-pomodoro
 tex-live-utility
 texshop
+thunderbird
 tradingview
 transmission
 transmit
@@ -64,6 +69,7 @@ trezor-suite
 via
 vlc
 vnc-viewer
+vscodium
 wezterm
 wins
 zed
