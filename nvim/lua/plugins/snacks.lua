@@ -1,9 +1,8 @@
-local Taskforge = require("taskforge")
-
 return {
   "folke/snacks.nvim",
   priority = 1000,
   lazy = false,
+  dependencies = { "chrisgve/taskforge.nvim" },
   opts = {
     dashboard = {
       sections = {
@@ -14,7 +13,9 @@ return {
           padding = 1,
           align = "center",
         },
-        Taskforge.get_snacks_dashboard_tasks(),
+        function()
+          return require("taskforge").get_snacks_dashboard_tasks()
+        end,
         { icon = " ", title = "Keymaps", section = "keys", indent = 3, gap = 1, padding = 1, pane = 1 },
         { pane = 2, icon = " ", title = "Recent Files", section = "recent_files", indent = 3, padding = 1 },
         { pane = 2, icon = " ", title = "Projects", section = "projects", indent = 3, padding = 1 },
