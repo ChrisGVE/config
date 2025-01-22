@@ -11,6 +11,7 @@ return {
     lazy = false,
     priority = 900,
     opts = { --- configuration for the Dashboard
+      debug = false,
       dashboard = {
         snacks_options = {
           pane = 2,
