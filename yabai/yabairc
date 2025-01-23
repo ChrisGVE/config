@@ -95,6 +95,7 @@ yabai -m rule --add label="SF Symbols" app="^SF Symbols$" manage=off
 yabai -m rule --add label="Setapp" app="^Setapp$" manage=off
 yabai -m rule --add label="Settings" app='^System Settings$' manage=off
 yabai -m rule --add label="Shortcuts" app="^Shortcuts$" manage=off
+yabai -m rule --add label="Spark Mail" app="^Spark Mail$" manage=off
 yabai -m rule --add label="Tot" app="^Tot$" manage=off
 yabai -m rule --add label="TradingView" app='^TradingView$' manage=off
 yabai -m rule --add label="Transmission" app='^Transmission$' manage=off

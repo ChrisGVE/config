@@ -11,7 +11,18 @@ return {
     lazy = false,
     priority = 900,
     opts = { --- configuration for the Dashboard
-      debug = false,
+      debug = {
+        --- toggle the logging
+        debug = true,
+        log_file = "./debug.log",
+        log_max_len = 160,
+      },
+      project = {
+        project_synonyms = {
+          ["config"] = ".config",
+          ["keyboard"] = { "qmk_userspace", "qmk_firmware", "qmk_keychron" },
+        },
+      },
       dashboard = {
         snacks_options = {
           pane = 2,
