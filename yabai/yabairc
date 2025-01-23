@@ -101,6 +101,7 @@ yabai -m rule --add label="TradingView" app='^TradingView$' manage=off
 yabai -m rule --add label="Transmission" app='^Transmission$' manage=off
 yabai -m rule --add label="VLC" app="^VLC$" manage=off
 yabai -m rule --add label="WhatsApp" app="WhatsApp" title="WhatsApp" manage=off
+yabai -m rule --add app=".*" sub-layer=normal
 yabai -m rule --apply
 
 echo "yabai configuration loaded.."
