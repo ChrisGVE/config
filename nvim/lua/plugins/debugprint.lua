@@ -1,4 +1,5 @@
 return {
+  enabled = false,
   "andrewferrier/debugprint.nvim",
   opts = {},
   dependencies = {

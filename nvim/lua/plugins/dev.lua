@@ -14,7 +14,7 @@ return {
       debug = {
         --- toggle the logging
         debug = true,
-        log_file = "./debug.log",
+        log_file = "/Users/chris/dev/projects/plugins/taskforge.nvim/debug.log",
         log_max_len = 160,
       },
       project = {

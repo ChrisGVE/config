@@ -21,6 +21,7 @@
 -- .timeLog() only: {{index}} inserts a running index. (Needed to differentiate between variables when using timeLog multiple times).
 
 return {
+  enabled = false,
   "chrisgrieser/nvim-chainsaw",
   event = "VeryLazy",
   opts = {

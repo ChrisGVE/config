@@ -28,8 +28,8 @@ return {
   },
   keys = {
     { "_h", "", desc = "💧Hyrdate" },
-    { "_hn", "<cmd>HydrateNow<cr>", desc = "🥛 Hydrated!" },
-    { "_hd", "<cmd>HydrateDisable<cr>", desc = "🚫Disable hydration reminders" },
+    { "_hn", "<cmd>HydrateNow<cr>", desc = "🥛Hydrated!" },
+    { "_hd", "<cmd>HydrateDisable<cr>", desc = "🚫 Disable hydration reminders" },
     { "_he", "<cmd>HydrateEnable<cr>", desc = "💧Enable hydration reminders" },
     { "_hw", "<cmd>HydrateWhen<cr>", desc = "⏲ Minutes until next drink" },
   },

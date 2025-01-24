@@ -1,4 +1,5 @@
 return {
+  enabled = false,
   "danielfalk/smart-open.nvim",
   branch = "0.2.x",
   config = function()
