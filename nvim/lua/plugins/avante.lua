@@ -1,52 +1,46 @@
+local prefix = "_a"
+
 return {
   "yetone/avante.nvim",
   event = "VeryLazy",
   lazy = false,
   version = false, -- set this to "*" if you want to always pull the latest change, false to update on release
   keys = {
-    { "_a", "", desc = "avante" },
-    {
-      "_aa",
-      function()
-        require("avante.api").ask()
-      end,
-      desc = "avante: ask",
-      mode = { "n", "v" },
-    },
-    {
-      "_ae",
-      function()
-        require("avante.api").edit()
-      end,
-      desc = "avante: edit",
-      mode = { "n", "v" },
-    },
-    {
-      "_ar",
-      function()
-        require("avante.api").refresh()
-      end,
-      desc = "avante: refresh",
-      mode = "v",
-    },
-    {
-      "_af",
-      function()
-        require("avante.api").focus()
-      end,
-      desc = "avante: focus",
-      mode = { "n", "v" },
-    },
+    { prefix, "", desc = "avante" },
   },
   opts = {
-    debug = true,
-    provider = "claude",
-    auto_suggestions_provider = "claude",
-    dual_boost = {
-      enabled = false,
+    mappings = {
+      ask = prefix .. "a",
+      edit = prefix .. "e",
+      refresh = prefix .. "r",
+      focus = prefix .. "f",
+      toggle = {
+        default = prefix .. "t",
+        debug = prefix .. "d",
+        hint = prefix .. "h",
+        suggestion = prefix .. "s",
+        repomap = prefix .. "R",
+      },
+      diff = {
+        next = "]c",
+        prev = "[c",
+      },
+      files = {
+        add_current = prefix .. ".",
+      },
     },
     behaviour = {
       auto_suggestions = false,
+    },
+    provider = "claude",
+    copilot = {
+      model = "claude-3.5-sonnet",
+      temperature = 0,
+      max_tokens = 8192,
+    },
+    auto_suggestions_provider = "claude",
+    dual_boost = {
+      enabled = false,
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`

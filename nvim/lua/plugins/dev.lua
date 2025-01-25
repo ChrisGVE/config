@@ -26,7 +26,7 @@ return {
       dashboard = {
         snacks_options = {
           pane = 2,
-          height = 10,
+          height = 5,
           enable = true,
         },
         format = {
@@ -34,7 +34,7 @@ return {
           columns = {
             "project",
             "description",
-            "due",
+            -- "due",
             "urgency",
           },
         },

@@ -2,7 +2,7 @@
 data.location=/Users/chris/.local/share/tasks
 news.version=3.3.0
 
-verbose=blank,footnote,label,new-id,affected,edit,special,project,sync,unwait
+verbose=no
 
 # To use the default location of the XDG directories,
 # move this configuration file from ~/.taskrc to ~/.config/task/taskrc and update location config as follows:
@@ -154,3 +154,7 @@ context.python.read=+python
 context.python.write=+python
 context.wezterm.read=+wezterm
 context.wezterm.write=+wezterm
+report.report-taskforge=Report on the taskforge project
+confirmation=off
+report.next.filter=status:pending
+reportort.next.filter=status:pending
