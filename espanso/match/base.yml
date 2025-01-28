@@ -12,6 +12,10 @@ matches:
   - trigger: ";email"
     replace: "christian.berclaz@mac.com"
 
+  # email-ch
+  - trigger: ";chemail"
+    replace: "rivendell-photo@bluewin.ch"
+
   # first name
   - trigger: "fname"
     replace: "Christian"
