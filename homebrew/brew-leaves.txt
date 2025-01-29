@@ -66,6 +66,7 @@ rust
 rust-analyzer
 rustc-completion
 shfmt
+showkey
 sphinx-doc
 sqlfluff
 tabiew

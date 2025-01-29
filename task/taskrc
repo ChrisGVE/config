@@ -155,6 +155,6 @@ context.python.write=+python
 context.wezterm.read=+wezterm
 context.wezterm.write=+wezterm
 report.report-taskforge=Report on the taskforge project
-confirmation=off
 report.next.filter=status:pending
 reportort.next.filter=status:pending
+confirmation=off
