@@ -158,3 +158,4 @@ report.report-taskforge=Report on the taskforge project
 report.next.filter=status:pending
 reportort.next.filter=status:pending
 confirmation=off
+editor=nvim
