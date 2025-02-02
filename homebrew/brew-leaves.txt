@@ -48,6 +48,7 @@ neovim
 nushell
 ocaml
 oh-my-posh
+ollama
 opam
 pandoc
 perl

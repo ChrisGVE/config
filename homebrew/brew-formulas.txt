@@ -157,6 +157,7 @@ node
 nushell
 ocaml
 oh-my-posh
+ollama
 oniguruma
 opam
 openblas
