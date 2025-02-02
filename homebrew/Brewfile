@@ -19,8 +19,6 @@ brew "bat"
 brew "bat-extras"
 # Python code formatter
 brew "black"
-# New way to see and navigate directory trees
-brew "broot"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # Powerful, lightweight programming language
@@ -38,7 +36,7 @@ brew "cmake-docs"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # General-purpose scripting language
-brew "php", restart_service: true
+brew "php", restart_service: :changed
 # Dependency Manager for PHP
 brew "composer"
 # Secure runtime for JavaScript and TypeScript
@@ -47,6 +45,8 @@ brew "deno"
 brew "direnv"
 # Text processing system for reStructuredText
 brew "docutils"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Banner-like program prints strings as ASCII art
@@ -54,7 +54,7 @@ brew "figlet"
 # Indent and beautify Fortran sources and generate dependency information
 brew "findent"
 # User-friendly command-line shell for UNIX-like operating systems
-brew "fish"
+brew "fish", args: ["HEAD"]
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Fast, simple fuzzy text selector with an advanced scoring algorithm
@@ -73,6 +73,8 @@ brew "glow"
 brew "gnu-sed"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Post-modern modal text editor
+brew "helix"
 # Website copier/offline browser
 brew "httrack"
 # Add GitHub support to git on the command-line
@@ -85,6 +87,8 @@ brew "julia"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Curses-based tool for viewing and analyzing log files
+brew "lnav"
 # Rainbows and unicorns in your console!
 brew "lolcat"
 # Package manager for the Lua programming language
@@ -103,10 +107,14 @@ brew "mosh"
 brew "multitail"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Modern shell for the GitHub era
+brew "nushell"
 # General purpose programming language in the ML family
 brew "ocaml"
 # Prompt theme engine for any shell
 brew "oh-my-posh"
+# Create, run, and share large language models (LLMs)
+brew "ollama", restart_service: :changed
 # OCaml package manager
 brew "opam"
 # Swiss-army knife of markup format conversion
@@ -141,16 +149,22 @@ brew "rust-analyzer"
 brew "rustc-completion"
 # Autoformat shell script source code
 brew "shfmt"
+# Simple keystroke visualizer
+brew "showkey"
 # Tool to create intelligent and beautiful documentation
-brew "sphinx-doc", link: false
+brew "sphinx-doc"
 # SQL linter and auto-formatter for Humans
 brew "sqlfluff"
+# TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
+brew "tabiew"
 # Feature-rich console based todo list manager
 brew "task"
 # Tool for taking notes and open urls with taskwarrior
 brew "taskopen"
 # Terminal user interface for taskwarrior
 brew "taskwarrior-tui"
+# General purpose fuzzy finder TUI
+brew "television"
 # Tool to build, change, and version infrastructure
 brew "terraform"
 # Code-search similar to ack
@@ -160,15 +174,19 @@ brew "timewarrior"
 # Terminal multiplexer
 brew "tmux"
 # Lightweight BitTorrent client
-brew "transmission-cli", restart_service: true
+brew "transmission-cli", restart_service: :changed
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Network diagnostic tool, inspired by mtr
+brew "trippy"
 # Maintained ctags implementation
 brew "universal-ctags"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 # Simple terminal image viewer written in Rust
 brew "viu"
+# Test compatibility of VT100-compatible terminals
+brew "vttest"
 # Internet file retriever
 brew "wget"
 # JavaScript package manager
@@ -185,6 +203,16 @@ brew "zip"
 brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Real-time type-ahead completion for Zsh
+brew "zsh-autocomplete"
+# Fish-like fast/unobtrusive autosuggestions for zsh
+brew "zsh-autosuggestions"
+# Feature-rich syntax highlighting for Zsh
+brew "zsh-fast-syntax-highlighting"
+# Fish shell like syntax highlighting for zsh
+brew "zsh-syntax-highlighting"
+# Better and friendly vi(vim) mode plugin for ZSH
+brew "zsh-vi-mode"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
 # A tiling window manager for macOS based on binary space partitioning.
@@ -201,6 +229,8 @@ cask "1password-cli"
 cask "adobe-acrobat-reader"
 # Application launcher and productivity software
 cask "alfred"
+# Local-first and end-to-end encrypted notes app
+cask "anytype"
 # Data backup and storage service
 cask "backblaze"
 # Edit and manage bibliographies
@@ -233,6 +263,10 @@ cask "font-sf-mono-nerd-font-ligaturized"
 cask "font-symbols-only-nerd-font"
 # GIT client
 cask "fork"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
+# Free and open-source image editor
+cask "gimp"
 # Web browser
 cask "google-chrome"
 # Client for the Google Drive storage service
@@ -251,20 +285,24 @@ cask "karabiner-elements"
 cask "keyboard-maestro"
 # Finds, learns and remembers keyboard shortcuts
 cask "keycue"
-# GPU-based terminal emulator
-cask "kitty"
 # Graphical interface for LaTeX
 cask "latexit"
 # Software for Logitech devices
 cask "logi-options+"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
 # Open-source firewall to block unknown outgoing connections
 cask "lulu"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
 # Minimal installer for conda
 cask "miniconda"
+# Spotlight Search
+cask "monarch"
 # Utility to move and zoom windows—on one display
 cask "moom"
+# Desktop sync client for Nextcloud software products
+cask "nextcloud"
 # App to write, plan, collaborate, and get organised
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -306,6 +344,8 @@ cask "taskwarrior-pomodoro"
 cask "tex-live-utility"
 # LaTeX and TeX editor and previewer
 cask "texshop"
+# Customizable email client
+cask "thunderbird"
 # Charting and social-networking for investment traders
 cask "tradingview"
 # Open-source BitTorrent client
@@ -314,22 +354,32 @@ cask "transmission"
 cask "transmit"
 # Companion app for the Trezor hardware wallet
 cask "trezor-suite"
+# Keyboard configurator
+cask "via"
 # Multimedia player
 cask "vlc"
+# Remote desktop application focusing on security
+cask "vnc-viewer"
+# Binary releases of VS Code without MS branding/telemetry/licensing
+cask "vscodium"
 # GPU-accelerated cross-platform terminal emulator and multiplexer
 cask "wezterm"
 # Window manager
 cask "wins"
 # Multiplayer code editor
 cask "zed"
+# Gecko based web browser
+cask "zen-browser"
 mas "1Password for Safari", id: 1569813296
 mas "Actions", id: 1586435171
 mas "AdBlock Pro", id: 1018301773
 mas "AdGuard for Safari", id: 1440147259
 mas "Affinity Designer 2", id: 1616831348
 mas "Aiko", id: 1672085276
+mas "Anybox", id: 1593408455
 mas "Audiobook Wizard", id: 460967298
 mas "AudioBookBinder", id: 413969927
+mas "BarMarks - Menu Bar Bookmarks", id: 6739710035
 mas "Cardhop", id: 1290358394
 mas "Cheatsheet", id: 1468213484
 mas "Cityscapes", id: 1631153096
@@ -343,6 +393,7 @@ mas "Developer", id: 640199958
 mas "Disk Speed Test", id: 425264550
 mas "Encrypto", id: 935235287
 mas "Fantastical", id: 975937182
+mas "Flow", id: 1423210932
 mas "Focus", id: 777233759
 mas "FolderMarker", id: 1012940117
 mas "Goodnotes", id: 1444383602
@@ -359,9 +410,7 @@ mas "Menu Box", id: 6463440793
 mas "NordVPN", id: 905953485
 mas "Notability", id: 360593530
 mas "Numbers", id: 409203825
-mas "OneDrive", id: 823766827
 mas "Pages", id: 409201541
-mas "PayPal Honey", id: 1472777122
 mas "PCalc", id: 403504866
 mas "Photomator", id: 1444636541
 mas "Reeder", id: 6475002485
@@ -376,5 +425,5 @@ mas "Texifier", id: 458866234
 mas "The Unarchiver", id: 425424353
 mas "Tot", id: 1491071483
 mas "Userscripts-Mac-App", id: 1463298887
+mas "WhatsApp", id: 310633997
 mas "Xcode", id: 497799835
-mas "‎WhatsApp", id: 310633997
