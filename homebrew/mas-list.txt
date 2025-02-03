@@ -45,7 +45,7 @@
 425424353   The Unarchiver                 (4.3.8)
 425264550   Disk Speed Test                (3.4.2)
 924726344   Deliveries                     (3.2.4)
-6463440793  Menu Box                       (2024.3.7)
+6463440793  Menu Box                       (2025.1.0)
 975937182   Fantastical                    (4.0.4)
 1586435171  Actions                        (3.5.1)
 1547771496  SimpleumSafe                   (3.5.5)
