@@ -1,71 +1,71 @@
 return {
   { "present.nvim", dev = true, enabled = false },
 
-  {
-    "chrisgve/ai_assistant.nvim",
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter",
-      "nvim-lua/plenary.nvim",
-      "MunifTanjim/nui.nvim",
-    },
-    keys = {
-      { "_a", desc = "AI assistance" },
-      {
-        "_ac",
-        function()
-          require("ai_assistant").handle_command("chat")
-        end,
-        desc = "chat",
-      },
-      {
-        "_ae",
-        function()
-          require("ai_assistant").handle_command("explain")
-        end,
-        desc = "explain",
-      },
-      {
-        "_ad",
-        function()
-          require("ai_assistant").handle_command("docs")
-        end,
-        desc = "docs",
-      },
-      {
-        "_at",
-        function()
-          require("ai_assistant").handle_command("test")
-        end,
-        desc = "test",
-      },
-      {
-        "_ar",
-        function()
-          require("ai_assistant").handle_command("refactor")
-        end,
-        desc = "refactor",
-      },
-      {
-        "_ap",
-        function()
-          require("ai_assistant").handle_command("optimize")
-        end,
-        desc = "optimize",
-      },
-    },
-    opts = {
-      debug = {
-        enabled = true,
-        log_file = "/Users/chris/dev/projects/plugins/ai_assistant.nvim/debug.log",
-      },
-      providers = {
-        { name = "copilot", priority = 1 },
-        { name = "ollama", priority = 2, endpoint = "http://localhost:11434", model = "codellama" },
-        { name = "claude", priority = 3 },
-        { name = "openai", priority = 4 },
-      },
-    },
-  },
+  -- {
+  --   "chrisgve/ai_assistant.nvim",
+  --   dependencies = {
+  --     "nvim-treesitter/nvim-treesitter",
+  --     "nvim-lua/plenary.nvim",
+  --     "MunifTanjim/nui.nvim",
+  --   },
+  --   keys = {
+  --     { "_a", desc = "AI assistance" },
+  --     {
+  --       "_ac",
+  --       function()
+  --         require("ai_assistant").handle_command("chat")
+  --       end,
+  --       desc = "chat",
+  --     },
+  --     {
+  --       "_ae",
+  --       function()
+  --         require("ai_assistant").handle_command("explain")
+  --       end,
+  --       desc = "explain",
+  --     },
+  --     {
+  --       "_ad",
+  --       function()
+  --         require("ai_assistant").handle_command("docs")
+  --       end,
+  --       desc = "docs",
+  --     },
+  --     {
+  --       "_at",
+  --       function()
+  --         require("ai_assistant").handle_command("test")
+  --       end,
+  --       desc = "test",
+  --     },
+  --     {
+  --       "_ar",
+  --       function()
+  --         require("ai_assistant").handle_command("refactor")
+  --       end,
+  --       desc = "refactor",
+  --     },
+  --     {
+  --       "_ap",
+  --       function()
+  --         require("ai_assistant").handle_command("optimize")
+  --       end,
+  --       desc = "optimize",
+  --     },
+  --   },
+  --   opts = {
+  --     debug = {
+  --       enabled = true,
+  --       log_file = "/Users/chris/dev/projects/plugins/ai_assistant.nvim/debug.log",
+  --     },
+  --     providers = {
+  --       { name = "copilot", priority = 1 },
+  --       { name = "ollama", priority = 2, endpoint = "http://localhost:11434", model = "codellama" },
+  --       { name = "claude", priority = 3 },
+  --       { name = "openai", priority = 4 },
+  --     },
+  --   },
+  -- },
 
   {
     "chrisgve/taskforge.nvim",

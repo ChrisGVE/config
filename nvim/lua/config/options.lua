@@ -23,3 +23,6 @@ vim.o.mousemoveevent = true
 -- vim.g.lazyvim_picker = "telescope"
 
 -- vim.g.ai_cmp = false
+
+-- recommended option for avante: views can only be fully collapsed with the global statusline
+vim.opt.laststatus = 3
