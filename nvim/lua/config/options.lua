@@ -22,4 +22,4 @@ vim.o.mousemoveevent = true
 
 -- vim.g.lazyvim_picker = "telescope"
 
-vim.g.ai_cmp = false
+-- vim.g.ai_cmp = false

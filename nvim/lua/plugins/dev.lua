@@ -2,71 +2,69 @@ return {
   { "present.nvim", dev = true, enabled = false },
 
   {
-    "chrisgve/ai_assistant.nvim", -- placeholder for your custom plugin repo
+    "chrisgve/ai_assistant.nvim",
     dependencies = {
       "nvim-treesitter/nvim-treesitter",
       "nvim-lua/plenary.nvim",
-      -- Add any additional dependency plugins (e.g., for UI elements)
+      "MunifTanjim/nui.nvim",
     },
     keys = {
-      -- Map for group description
-      { "n", "_a", "", desc = "AI assistance" },
-      -- Map _a for generic AI chat command
+      { "_a", desc = "AI assistance" },
       {
-        "n",
         "_ac",
         function()
-          require("ai_assistant").chat()
+          require("ai_assistant").handle_command("chat")
         end,
         desc = "chat",
       },
-      -- Map _ae for code explanation
       {
-        "n",
         "_ae",
         function()
-          require("ai_assistant").explain()
+          require("ai_assistant").handle_command("explain")
         end,
-        desc = "code explanation",
+        desc = "explain",
       },
-      -- Map _ad for documentation generation
       {
-        "n",
         "_ad",
         function()
-          require("ai_assistant").generate_docs()
+          require("ai_assistant").handle_command("docs")
         end,
-        desc = "doc generation",
+        desc = "docs",
       },
-      -- Map _at for test generation
       {
-        "n",
         "_at",
         function()
-          require("ai_assistant").generate_tests()
+          require("ai_assistant").handle_command("test")
         end,
-        desc = "test generation",
+        desc = "test",
       },
-      -- Map _ar for refactoring suggestions
       {
-        "n",
         "_ar",
         function()
-          require("ai_assistant").refactor()
+          require("ai_assistant").handle_command("refactor")
         end,
-        desc = "refactoring",
+        desc = "refactor",
       },
-      -- Map _ap for performance improvement suggestions
       {
-        "n",
         "_ap",
         function()
-          require("ai_assistant").optimize_performance()
+          require("ai_assistant").handle_command("optimize")
         end,
-        desc = "code optimization",
+        desc = "optimize",
       },
     },
-    opts = {},
+    opts = {
+      debug = {
+        enabled = true,
+        log_file = "/Users/chris/dev/projects/plugins/ai_assistant.nvim/debug.log",
+      },
+      providers = {
+        { name = "copilot", priority = 1 },
+        { name = "ollama", priority = 2, endpoint = "http://localhost:11434", model = "codellama" },
+        { name = "claude", priority = 3 },
+        { name = "openai", priority = 4 },
+      },
+    },
   },
 
   {
