@@ -46,6 +46,7 @@ mas
 mosh
 multitail
 neovim
+netmute/tap/ctags-lsp
 nushell
 ocaml
 oh-my-posh
@@ -82,7 +83,6 @@ tmux
 transmission-cli
 tree
 trippy
-universal-ctags
 utf8proc
 uv
 viu
@@ -98,5 +98,6 @@ zsh
 zsh-autocomplete
 zsh-autosuggestions
 zsh-fast-syntax-highlighting
+zsh-history-substring-search
 zsh-syntax-highlighting
 zsh-vi-mode
