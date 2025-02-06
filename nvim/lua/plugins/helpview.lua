@@ -1,8 +1,9 @@
 return {
   "OXY2DEV/helpview.nvim",
   lazy = false,
-  dependencies = { "nvim-treesitter/nvim-treesitter" },
-  config = function()
-    require("helpview").setup()
-  end,
+  preview = {
+    enable = true,
+    enable_hybrid_mode = true,
+    icon_provider = "devicons",
+  },
 }
