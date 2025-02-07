@@ -76,6 +76,7 @@ tabiew
 taskopen
 taskwarrior-tui
 television
+tenere
 terraform
 the_silver_searcher
 timewarrior
@@ -95,9 +96,7 @@ zig
 zip
 zoxide
 zsh
-zsh-autocomplete
 zsh-autosuggestions
 zsh-fast-syntax-highlighting
 zsh-history-substring-search
-zsh-syntax-highlighting
 zsh-vi-mode

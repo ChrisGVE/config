@@ -1,1 +1,16 @@
 exit
+l
+ls
+ls -a
+cd .config
+cd zsh
+l
+ls
+pbcopy < zshrc
+nvim zshrc oh-my-posh/config.yml
+cd
+cd .config
+l
+ls
+brew install exa
+exit
