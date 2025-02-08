@@ -187,6 +187,7 @@ pyenv
 pygments
 python-packaging
 python@3.13
+python@3.9
 qmk
 rage
 readline
@@ -207,6 +208,7 @@ tabiew
 task
 taskopen
 taskwarrior-tui
+tcl-tk@8
 teensy_loader_cli
 television
 tenere
@@ -229,6 +231,7 @@ viu
 vttest
 webp
 wget
+wordnet
 xorgproto
 xz
 yabai

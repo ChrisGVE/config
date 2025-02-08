@@ -60,6 +60,7 @@ prettier
 prettierd
 pyenv
 pygments
+python@3.9
 qmk/qmk/qmk
 rage
 reattach-to-user-namespace
@@ -89,6 +90,7 @@ uv
 viu
 vttest
 wget
+wordnet
 yarn
 yazi
 yq

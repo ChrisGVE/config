@@ -49,3 +49,8 @@ map("n", "<leader><Left>", require("smart-splits").swap_buf_left, { desc = "Swap
 map("n", "<leader><Down>", require("smart-splits").swap_buf_down, { desc = "Swap buffer down window" })
 map("n", "<leader><Up>", require("smart-splits").swap_buf_up, { desc = "Swap buffer up window" })
 map("n", "<leader><Right>", require("smart-splits").swap_buf_right, { desc = "Swap buffer right window" })
+
+-- mapping for Neogit
+--
+-- local neogit = require("neogit")
+-- map("n", "<leader>gn",)
