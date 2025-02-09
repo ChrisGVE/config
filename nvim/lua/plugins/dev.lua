@@ -80,7 +80,7 @@ return {
     opts = { --- configuration for the Dashboard
       debug = {
         --- toggle the logging
-        debug = true,
+        enable = true,
         log_file = "/Users/chris/dev/projects/plugins/taskforge.nvim/debug.log",
         log_max_len = 160,
       },

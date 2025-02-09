@@ -53,4 +53,31 @@ map("n", "<leader><Right>", require("smart-splits").swap_buf_right, { desc = "Sw
 -- mapping for Neogit
 --
 -- local neogit = require("neogit")
--- map("n", "<leader>gn",)
+-- local ng_prefix = "_g"
+-- local neogit_cmds = {
+--   bisect = { key = "B", desc = "bisect" },
+--   branch = { key = "b", desc = "branch" },
+--   branch_config = { key = "F", desc = "branch config" },
+--   cherry_pick = { key = "C", desc = "cherry_pick" },
+--   commit = { key = "c", desc = "commit" },
+--   diff = { key = "d", desc = "diff" },
+--   fetch = { key = "f", desc = "fetch" },
+--   help = { key = "h", desc = "help" },
+--   ignore = { key = "i", desc = "ignore" },
+--   log = { key = "l", desc = "log" },
+--   merge = { key = "m", desc = "merge" },
+--   pull = { key = "p", desc = "pull" },
+--   push = { key = "P", desc = "push" },
+--   rebase = { key = "r", desc = "rebase" },
+--   remote = { key = "R", desc = "remote" },
+--   remote_config = { key = "T", desc = "remote config" },
+--   reset = { key = "E", desc = "reset" },
+--   revert = { key = "v", desc = "revert" },
+--   stash = { key = "s", desc = "stash" },
+--   tag = { key = "t", desc = "tag" },
+--   worktree = { key = "w", desc = "worktree" },
+-- }
+-- map("n", ng_prefix, "", { desc = "Neogit" })
+-- for key, value in pairs(neogit_cmds) do
+--   map("n", ng_prefix .. value.key, "<cmd>Neogit " .. key .. "<cr>", { desc = value.desc })
+-- end

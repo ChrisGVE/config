@@ -78,7 +78,6 @@ taskopen
 taskwarrior-tui
 television
 tenere
-terraform
 the_silver_searcher
 timewarrior
 tmux

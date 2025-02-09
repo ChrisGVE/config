@@ -41,6 +41,7 @@ dfu-programmer
 dfu-util
 direnv
 docutils
+expat
 fastfetch
 fd
 figlet
@@ -212,7 +213,6 @@ tcl-tk@8
 teensy_loader_cli
 television
 tenere
-terraform
 tesseract
 the_silver_searcher
 tidy-html5
