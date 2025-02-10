@@ -74,3 +74,4 @@ wezterm
 wins
 zed
 zen-browser
+zen-browser@twilight
