@@ -38,7 +38,7 @@
 360593530   Notability                     (14.10.10)
 1594183810  Shortery                       (6.5)
 775737590   iA Writer                      (7.2.8)
-1290358394  Cardhop                        (2.3.3)
+1290358394  Cardhop                        (2.3.4)
 409201541   Pages                          (14.3)
 409203825   Numbers                        (14.3)
 6478772538  IconizeFolder                  (1.5.1)
