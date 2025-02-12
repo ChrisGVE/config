@@ -36,7 +36,6 @@ julia
 koekeishiya/formulae/yabai
 lazydocker
 lazygit
-llama.cpp
 lnav
 lolcat
 luarocks

@@ -128,7 +128,6 @@ libxrender
 libyaml
 libzip
 little-cms2
-llama.cpp
 llvm
 lnav
 lolcat
