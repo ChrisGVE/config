@@ -42,6 +42,8 @@ moom
 nextcloud
 notion
 obsidian
+ollama
+ollamac
 omnifocus
 omnigraffle
 omnioutliner
