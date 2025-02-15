@@ -48,7 +48,6 @@ omnifocus
 omnigraffle
 omnioutliner
 omniplan
-only-switch
 parallels
 parallels-toolbox
 plus42-decimal
