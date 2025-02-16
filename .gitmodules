@@ -16,3 +16,6 @@
 [submodule "zsh/ohmyzsh"]
 	path = zsh/ohmyzsh
 	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "nvim"]
+	path = nvim
+	url = git@github.com:ChrisGVE/config.nvim.git
