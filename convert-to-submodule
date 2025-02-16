@@ -25,69 +25,9 @@ if ! git -C "$CONFIG_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
 	exit 1
 fi
 
-# Check if the folder has any git history
-echo "Checking git history for $FOLDER_NAME..."
-cd "$CONFIG_DIR" || exit 1
-if ! git log --full-history -- "$FOLDER_NAME" >/dev/null 2>&1; then
-	echo "Warning: No git history found for $FOLDER_NAME"
-	echo "This might mean the folder is:"
-	echo "  1. Not tracked in git"
-	echo "  2. Recently added but not committed"
-	echo "  3. Empty or contains only untracked files"
-	echo ""
-	echo "Would you like to:"
-	echo "  1. Continue without history (new repository will start fresh)"
-	echo "  2. Abort the process"
-	read -p "Please choose (1/2): " choice
-
-	if [ "$choice" != "1" ]; then
-		echo "Operation aborted"
-		exit 1
-	fi
-
-	# Create an empty branch for the new content
-	git checkout --orphan "${FOLDER_NAME}-split"
-	git reset --hard
-	if [ -d "$FOLDER_NAME" ]; then
-		cp -r "$FOLDER_NAME"/* .
-		git add .
-		git commit -m "Initial commit for $FOLDER_NAME"
-	fi
-	git checkout main || git checkout master
-else
-	# Create a new branch with the folder's history
-	echo "Extracting history for $FOLDER_NAME..."
-	if ! git subtree split --prefix="$FOLDER_NAME" -b "${FOLDER_NAME}-split"; then
-		echo "Error: Failed to split subtree"
-		exit 1
-	fi
-fi
-
-# Create and initialize the new repository
-echo "Creating new repository..."
-mkdir -p "$TEMP_DIR"
-cd "$TEMP_DIR" || exit 1
-git init
-git pull "$CONFIG_DIR" "${FOLDER_NAME}-split"
-
-# Set up the new repository remote and push
-echo "Setting up remote repository..."
-git remote add origin "git@github.com:$GITHUB_USERNAME/config.$FOLDER_NAME.git"
-if ! git push -u origin main; then
-	echo "Error: Failed to push to remote repository"
-	echo "Please make sure the repository 'config.$FOLDER_NAME' exists on GitHub"
-	cd "$CONFIG_DIR" || exit 1
-	git branch -D "${FOLDER_NAME}-split"
-	rm -rf "$TEMP_DIR"
-	exit 1
-fi
-
-# Remove the original folder and handle potential untracked files
-echo "Converting to submodule..."
-cd "$CONFIG_DIR" || exit 1
-
 # Clean up any existing submodule configurations
 echo "Cleaning up any existing submodule configurations..."
+cd "$CONFIG_DIR" || exit 1
 if [ -d ".git/modules/$FOLDER_NAME" ]; then
 	rm -rf ".git/modules/$FOLDER_NAME"
 	# Also remove from .gitmodules if it exists
@@ -99,33 +39,52 @@ if [ -d ".git/modules/$FOLDER_NAME" ]; then
 	fi
 fi
 
+# Create and initialize the new repository
+echo "Creating new repository..."
+rm -rf "$TEMP_DIR"
+mkdir -p "$TEMP_DIR"
+cd "$TEMP_DIR" || exit 1
+git init
+
+# Copy current content
+echo "Copying current content..."
+cp -r "$CONFIG_DIR/$FOLDER_NAME"/* ./ 2>/dev/null || true
+cp -r "$CONFIG_DIR/$FOLDER_NAME"/.[!.]* ./ 2>/dev/null || true # Copy hidden files too
+
+# Initialize the new repository
+git init -b main
+git add .
+git commit -m "Initial commit for $FOLDER_NAME configuration" || true
+
+# Set up the new repository remote and push
+echo "Setting up remote repository..."
+git remote add origin "git@github.com:$GITHUB_USERNAME/config.$FOLDER_NAME.git"
+if ! git push -u origin main; then
+	echo "Error: Failed to push to remote repository"
+	echo "Please make sure the repository 'config.$FOLDER_NAME' exists on GitHub"
+	rm -rf "$TEMP_DIR"
+	exit 1
+fi
+
+# Remove the original folder and handle potential index entries
+cd "$CONFIG_DIR" || exit 1
+echo "Converting to submodule..."
+
 # Try to remove the folder from git and handle potential index entries
-if ! git rm -r "$FOLDER_NAME"; then
-	echo "Warning: Failed to remove $FOLDER_NAME using git rm."
+if ! git rm -r "$FOLDER_NAME" 2>/dev/null; then
 	echo "Attempting to clean up git index..."
+	git rm -r --cached "$FOLDER_NAME" 2>/dev/null || true
+fi
 
-	# Force remove from index
-	git rm -r --cached "$FOLDER_NAME"
-
-	# Move the physical folder if it exists
-	if [ -d "$FOLDER_NAME" ]; then
-		echo "Moving existing folder to ${FOLDER_NAME}_backup for your inspection."
-		mv "$FOLDER_NAME" "${FOLDER_NAME}_backup"
-		echo "Please check ${FOLDER_NAME}_backup for any important untracked files or submodules."
-	fi
-else
-	# If git rm succeeded but folder still exists
-	if [ -d "$FOLDER_NAME" ]; then
-		echo "Warning: Folder $FOLDER_NAME still exists after git removal."
-		echo "This could be due to untracked files or nested submodules."
-		echo "Moving it to ${FOLDER_NAME}_backup for your inspection."
-		mv "$FOLDER_NAME" "${FOLDER_NAME}_backup"
-		echo "Please check ${FOLDER_NAME}_backup for any important untracked files or submodules."
-	fi
+# If the folder still exists, move it to backup
+if [ -d "$FOLDER_NAME" ]; then
+	echo "Moving existing folder to ${FOLDER_NAME}_backup for your inspection."
+	mv "$FOLDER_NAME" "${FOLDER_NAME}_backup"
+	echo "Please check ${FOLDER_NAME}_backup for any important untracked files or submodules."
 fi
 
 # Commit the removal
-git commit -m "Remove $FOLDER_NAME directory in preparation for submodule"
+git commit -m "Remove $FOLDER_NAME directory in preparation for submodule" || true
 
 # Add the new submodule
 if ! git submodule add "git@github.com:$GITHUB_USERNAME/config.$FOLDER_NAME.git" "$FOLDER_NAME"; then
@@ -136,7 +95,6 @@ git commit -m "Add $FOLDER_NAME configuration as submodule"
 
 # Clean up
 echo "Cleaning up..."
-git branch -D "${FOLDER_NAME}-split"
 rm -rf "$TEMP_DIR"
 
 echo "Successfully converted $FOLDER_NAME to a submodule!"
