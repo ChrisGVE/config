@@ -1,0 +1,3 @@
+[submodule "lazygit"]
+	path = lazygit
+	url = git@github.com:ChrisGVE/config.lazygit.git
