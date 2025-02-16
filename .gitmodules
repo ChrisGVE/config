@@ -7,3 +7,6 @@
 [submodule "borders"]
 	path = borders
 	url = git@github.com:ChrisGVE/config.borders.git
+[submodule "karabiner"]
+	path = karabiner
+	url = git@github.com:ChrisGVE/config.karabiner.git
