@@ -97,5 +97,10 @@ git commit -m "Add $FOLDER_NAME configuration as submodule"
 echo "Cleaning up..."
 rm -rf "$TEMP_DIR"
 
+# Push changes to the main config repository
+echo "Pushing changes to main config repository..."
+cd "$CONFIG_DIR" || exit 1
+git push
+
 echo "Successfully converted $FOLDER_NAME to a submodule!"
 echo "New repository: https://github.com/$GITHUB_USERNAME/config.$FOLDER_NAME"
