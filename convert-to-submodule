@@ -1,0 +1,85 @@
+#!/bin/bash
+
+# Check if a folder name was provided
+if [ $# -ne 1 ]; then
+	echo "Usage: $0 <folder_name>"
+	echo "Example: $0 nvim"
+	exit 1
+fi
+
+# Configuration variables
+FOLDER_NAME="$1"
+GITHUB_USERNAME="ChrisGVE"
+CONFIG_DIR="${XDG_CONFIG_HOME:-$HOME/.config}"
+TEMP_DIR="/tmp/temp-$FOLDER_NAME"
+
+# Check if the folder exists in the config directory
+if [ ! -d "$CONFIG_DIR/$FOLDER_NAME" ]; then
+	echo "Error: Folder $FOLDER_NAME does not exist in $CONFIG_DIR"
+	exit 1
+fi
+
+# Check if we're in a git repository
+if ! git -C "$CONFIG_DIR" rev-parse --is-inside-work-tree >/dev/null 2>&1; then
+	echo "Error: $CONFIG_DIR is not a git repository"
+	exit 1
+fi
+
+# Create a new branch with the folder's history
+echo "Extracting history for $FOLDER_NAME..."
+cd "$CONFIG_DIR" || exit 1
+if ! git subtree split --prefix="$FOLDER_NAME" -b "${FOLDER_NAME}-split"; then
+	echo "Error: Failed to split subtree"
+	exit 1
+fi
+
+# Create and initialize the new repository
+echo "Creating new repository..."
+mkdir -p "$TEMP_DIR"
+cd "$TEMP_DIR" || exit 1
+git init
+git pull "$CONFIG_DIR" "${FOLDER_NAME}-split"
+
+# Set up the new repository remote and push
+echo "Setting up remote repository..."
+git remote add origin "git@github.com:$GITHUB_USERNAME/config.$FOLDER_NAME.git"
+if ! git push -u origin main; then
+	echo "Error: Failed to push to remote repository"
+	echo "Please make sure the repository 'config.$FOLDER_NAME' exists on GitHub"
+	cd "$CONFIG_DIR" || exit 1
+	git branch -D "${FOLDER_NAME}-split"
+	rm -rf "$TEMP_DIR"
+	exit 1
+fi
+
+# Remove the original folder and handle potential untracked files
+echo "Converting to submodule..."
+cd "$CONFIG_DIR" || exit 1
+
+# Try to remove the folder from git
+git rm -r "$FOLDER_NAME"
+git commit -m "Remove $FOLDER_NAME directory in preparation for submodule"
+
+# Check if the folder still exists (due to untracked files or nested submodules)
+if [ -d "$FOLDER_NAME" ]; then
+	echo "Warning: Folder $FOLDER_NAME still exists after git removal."
+	echo "This could be due to untracked files or nested submodules."
+	echo "Moving it to ${FOLDER_NAME}_backup for your inspection."
+	mv "$FOLDER_NAME" "${FOLDER_NAME}_backup"
+	echo "Please check ${FOLDER_NAME}_backup for any important untracked files or submodules."
+fi
+
+# Add the new submodule
+if ! git submodule add "git@github.com:$GITHUB_USERNAME/config.$FOLDER_NAME.git" "$FOLDER_NAME"; then
+	echo "Error: Failed to add submodule. Please check the backup folder and try again."
+	exit 1
+fi
+git commit -m "Add $FOLDER_NAME configuration as submodule"
+
+# Clean up
+echo "Cleaning up..."
+git branch -D "${FOLDER_NAME}-split"
+rm -rf "$TEMP_DIR"
+
+echo "Successfully converted $FOLDER_NAME to a submodule!"
+echo "New repository: https://github.com/$GITHUB_USERNAME/config.$FOLDER_NAME"
