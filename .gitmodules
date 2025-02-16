@@ -10,3 +10,6 @@
 [submodule "karabiner"]
 	path = karabiner
 	url = git@github.com:ChrisGVE/config.karabiner.git
+[submodule "task"]
+	path = task
+	url = git@github.com:ChrisGVE/config.task.git
