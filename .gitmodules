@@ -1,3 +1,6 @@
 [submodule "zsh"]
 	path = zsh
 	url = git@github.com:ChrisGVE/config.zsh.git
+[submodule "yabai"]
+	path = yabai
+	url = git@github.com:ChrisGVE/config.yabai.git
