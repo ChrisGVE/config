@@ -1,3 +1,6 @@
 [submodule "lazygit"]
 	path = lazygit
 	url = git@github.com:ChrisGVE/config.lazygit.git
+[submodule "espanso"]
+	path = espanso
+	url = git@github.com:ChrisGVE/config.espanso.git
