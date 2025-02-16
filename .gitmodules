@@ -13,3 +13,6 @@
 [submodule "task"]
 	path = task
 	url = git@github.com:ChrisGVE/config.task.git
+[submodule "taskopen"]
+	path = taskopen
+	url = git@github.com:ChrisGVE/config.taskopen.git
