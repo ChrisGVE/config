@@ -4,3 +4,6 @@
 [submodule "yabai"]
 	path = yabai
 	url = git@github.com:ChrisGVE/config.yabai.git
+[submodule "borders"]
+	path = borders
+	url = git@github.com:ChrisGVE/config.borders.git
