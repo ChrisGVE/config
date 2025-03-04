@@ -17,7 +17,9 @@ docutils
 fastfetch
 fd
 felixkratz/formulae/borders
+ffmpeg
 figlet
+file-formula
 findent
 fish
 fzf
@@ -32,6 +34,8 @@ go
 helix
 httrack
 hub
+imagemagick
+jq
 julia
 koekeishiya/formulae/yabai
 lazydocker
@@ -55,6 +59,7 @@ pandoc
 perl
 pipx
 pnpm
+poppler
 prettier
 prettierd
 pyenv
@@ -68,6 +73,7 @@ ruby
 rust
 rust-analyzer
 rustc-completion
+sevenzip
 shfmt
 showkey
 sphinx-doc
@@ -89,6 +95,8 @@ viu
 vttest
 wget
 wordnet
+xclip
+xsel
 yarn
 yazi
 yq
