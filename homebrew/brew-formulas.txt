@@ -169,6 +169,7 @@ libxt
 libyaml
 libzip
 little-cms2
+lld
 llvm
 lnav
 lolcat
