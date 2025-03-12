@@ -186,7 +186,6 @@ markdown-toc
 markdownlint-cli2
 mas
 mbedtls
-mbedtls@2
 mdloader
 metis
 miniupnpc
@@ -239,6 +238,7 @@ protobuf
 pyenv
 pygments
 python-packaging
+python-setuptools
 python@3.13
 python@3.9
 qmk
