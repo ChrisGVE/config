@@ -78,6 +78,7 @@ shfmt
 showkey
 sphinx-doc
 sqlfluff
+superfile
 tabiew
 taskopen
 taskwarrior-tui

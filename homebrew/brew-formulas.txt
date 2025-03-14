@@ -265,6 +265,7 @@ sqlfluff
 sqlite
 srt
 suite-sparse
+superfile
 svt-av1
 tabiew
 task
