@@ -89,6 +89,7 @@ highway
 httrack
 hub
 icu4c@76
+icu4c@77
 imagemagick
 imath
 isl

@@ -7,6 +7,7 @@ backblaze
 bibdesk
 calibre
 chronosync
+cork
 daisydisk
 devonagent
 devonthink
