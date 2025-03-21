@@ -3,6 +3,7 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 tap "jesseduffield/lazydocker"
 tap "koekeishiya/formulae"
+tap "netmute/tap"
 tap "osx-cross/arm"
 tap "osx-cross/avr"
 tap "qmk/qmk"
@@ -17,6 +18,10 @@ brew "automake"
 brew "bat"
 # Bash scripts that integrate bat with various command-line tools
 brew "bat-extras"
+# XML 1.0 parser
+brew "expat"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Python code formatter
 brew "black"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -49,8 +54,12 @@ brew "docutils"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Play, record, convert, and stream audio and video
+brew "ffmpeg"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
+# Utility to determine file types
+brew "file-formula"
 # Indent and beautify Fortran sources and generate dependency information
 brew "findent"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -79,6 +88,10 @@ brew "helix"
 brew "httrack"
 # Add GitHub support to git on the command-line
 brew "hub"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Clean C library for processing UTF-8 Unicode data
 brew "utf8proc", args: ["HEAD"]
 # Fast, Dynamic Programming Language
@@ -114,7 +127,7 @@ brew "ocaml"
 # Prompt theme engine for any shell
 brew "oh-my-posh"
 # Create, run, and share large language models (LLMs)
-brew "ollama", restart_service: :changed
+brew "ollama", link: false
 # OCaml package manager
 brew "opam"
 # Swiss-army knife of markup format conversion
@@ -125,6 +138,8 @@ brew "perl"
 brew "pipx"
 # Fast, disk space efficient package manager
 brew "pnpm"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
 brew "prettier"
 # Prettier daemon
@@ -133,6 +148,8 @@ brew "prettierd"
 brew "pyenv"
 # Generic syntax highlighter
 brew "pygments"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Simple, modern, secure file encryption
 brew "rage"
 # Reattach process (e.g., tmux) to background
@@ -147,6 +164,8 @@ brew "rust"
 brew "rust-analyzer"
 # Bash completion for rustc
 brew "rustc-completion"
+# 7-Zip is a file archiver with a high compression ratio
+brew "sevenzip"
 # Autoformat shell script source code
 brew "shfmt"
 # Simple keystroke visualizer
@@ -155,6 +174,8 @@ brew "showkey"
 brew "sphinx-doc"
 # SQL linter and auto-formatter for Humans
 brew "sqlfluff"
+# Modern and pretty fancy file manager for the terminal
+brew "superfile"
 # TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
 brew "tabiew"
 # Feature-rich console based todo list manager
@@ -165,8 +186,8 @@ brew "taskopen"
 brew "taskwarrior-tui"
 # General purpose fuzzy finder TUI
 brew "television"
-# Tool to build, change, and version infrastructure
-brew "terraform"
+# TUI interface for LLMs written in Rust
+brew "tenere"
 # Code-search similar to ack
 brew "the_silver_searcher"
 # Command-line time tracking application
@@ -189,6 +210,12 @@ brew "viu"
 brew "vttest"
 # Internet file retriever
 brew "wget"
+# Lexical database for the English language
+brew "wordnet"
+# Access X11 clipboards from the command-line
+brew "xclip"
+# Command-line program for getting and setting the contents of the X selection
+brew "xsel"
 # JavaScript package manager
 brew "yarn"
 # Blazing fast terminal file manager written in Rust, based on async I/O
@@ -203,20 +230,20 @@ brew "zip"
 brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
-# Real-time type-ahead completion for Zsh
-brew "zsh-autocomplete"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Feature-rich syntax highlighting for Zsh
 brew "zsh-fast-syntax-highlighting"
-# Fish shell like syntax highlighting for zsh
-brew "zsh-syntax-highlighting"
+# Zsh port of Fish shell's history search
+brew "zsh-history-substring-search"
 # Better and friendly vi(vim) mode plugin for ZSH
 brew "zsh-vi-mode"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
 # A tiling window manager for macOS based on binary space partitioning.
 brew "koekeishiya/formulae/yabai"
+# LSP implementation using universal-ctags as backend
+brew "netmute/tap/ctags-lsp"
 # GNU compiler collection for AVR 8-bit and 32-bit Microcontrollers
 brew "osx-cross/avr/avr-gcc@8"
 # Quantum Mechanical Keyboard (QMK) Firmware
@@ -239,6 +266,8 @@ cask "bibdesk"
 cask "calibre"
 # Synchronisation and backup tool
 cask "chronosync"
+# GUI companion app for Homebrew
+cask "cork"
 # Disk space visualiser
 cask "daisydisk"
 # Assistant for efficient web searches
@@ -307,6 +336,10 @@ cask "nextcloud"
 cask "notion"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# Get up and running with large language models locally
+cask "ollama"
+# Interact with Ollama models
+cask "ollamac"
 # Scheduling application focusing on organisation
 cask "omnifocus"
 # Visual communication software
@@ -315,8 +348,6 @@ cask "omnigraffle"
 cask "omnioutliner"
 # Project planning and management software
 cask "omniplan"
-# System and utility switches
-cask "only-switch"
 # Desktop virtualization software
 cask "parallels"
 # Bundle with over 30 tools
@@ -339,6 +370,7 @@ cask "spamsieve"
 cask "steam"
 # Spreadsheet style tag editor for audio files
 cask "tageditor"
+# Pomodoro timer for Taskwarrior
 cask "taskwarrior-pomodoro"
 # Graphical user interface for TeX Live Manager
 cask "tex-live-utility"
@@ -370,60 +402,3 @@ cask "wins"
 cask "zed"
 # Gecko based web browser
 cask "zen-browser"
-mas "1Password for Safari", id: 1569813296
-mas "Actions", id: 1586435171
-mas "AdBlock Pro", id: 1018301773
-mas "AdGuard for Safari", id: 1440147259
-mas "Affinity Designer 2", id: 1616831348
-mas "Aiko", id: 1672085276
-mas "Anybox", id: 1593408455
-mas "Audiobook Wizard", id: 460967298
-mas "AudioBookBinder", id: 413969927
-mas "BarMarks - Menu Bar Bookmarks", id: 6739710035
-mas "Cardhop", id: 1290358394
-mas "Cheatsheet", id: 1468213484
-mas "Cityscapes", id: 1631153096
-mas "CleanMyDrive 2", id: 523620159
-mas "Coin Stats", id: 1387758574
-mas "Coin Stats", id: 1498417304
-mas "Darkroom", id: 953286746
-mas "Data Jar", id: 1453273600
-mas "Deliveries", id: 924726344
-mas "Developer", id: 640199958
-mas "Disk Speed Test", id: 425264550
-mas "Encrypto", id: 935235287
-mas "Fantastical", id: 975937182
-mas "Flow", id: 1423210932
-mas "Focus", id: 777233759
-mas "FolderMarker", id: 1012940117
-mas "Goodnotes", id: 1444383602
-mas "Grammarly for Safari", id: 1462114288
-mas "Ground News", id: 1324203419
-mas "HP Smart", id: 1474276998
-mas "iA Writer", id: 775737590
-mas "IconizeFolder", id: 6478772538
-mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
-mas "Kiwix", id: 997079563
-mas "Live Wallpaper", id: 531123879
-mas "Menu Box", id: 6463440793
-mas "NordVPN", id: 905953485
-mas "Notability", id: 360593530
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "PCalc", id: 403504866
-mas "Photomator", id: 1444636541
-mas "Reeder", id: 6475002485
-mas "Save to Medium", id: 1485294824
-mas "Shazam", id: 897118787
-mas "Shortery", id: 1594183810
-mas "ShutterCount", id: 720123827
-mas "SimpleumSafe", id: 1547771496
-mas "Slack", id: 803453959
-mas "Speedtest", id: 1153157709
-mas "Texifier", id: 458866234
-mas "The Unarchiver", id: 425424353
-mas "Tot", id: 1491071483
-mas "Userscripts-Mac-App", id: 1463298887
-mas "WhatsApp", id: 310633997
-mas "Xcode", id: 497799835
