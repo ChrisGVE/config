@@ -1,7 +1,4 @@
 tap "felixkratz/formulae"
-tap "homebrew/bundle"
-tap "homebrew/services"
-tap "jesseduffield/lazydocker"
 tap "koekeishiya/formulae"
 tap "netmute/tap"
 tap "osx-cross/arm"
@@ -127,7 +124,7 @@ brew "ocaml"
 # Prompt theme engine for any shell
 brew "oh-my-posh"
 # Create, run, and share large language models (LLMs)
-brew "ollama", link: false
+brew "ollama"
 # OCaml package manager
 brew "opam"
 # Swiss-army knife of markup format conversion
@@ -370,8 +367,6 @@ cask "spamsieve"
 cask "steam"
 # Spreadsheet style tag editor for audio files
 cask "tageditor"
-# Pomodoro timer for Taskwarrior
-cask "taskwarrior-pomodoro"
 # Graphical user interface for TeX Live Manager
 cask "tex-live-utility"
 # LaTeX and TeX editor and previewer

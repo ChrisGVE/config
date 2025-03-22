@@ -60,7 +60,6 @@ soundsource
 spamsieve
 steam
 tageditor
-taskwarrior-pomodoro
 tex-live-utility
 texshop
 thunderbird
