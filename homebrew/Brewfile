@@ -273,8 +273,6 @@ cask "devonagent"
 cask "devonthink"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerised applications and microservices
-cask "docker"
 # Client for the Dropbox cloud storage service
 cask "dropbox"
 # Launcher for *Epic Games* games
