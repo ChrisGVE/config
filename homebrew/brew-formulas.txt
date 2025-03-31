@@ -171,7 +171,9 @@ libyaml
 libzip
 little-cms2
 lld
+lld@19
 llvm
+llvm@19
 lnav
 lolcat
 lpeg
