@@ -23,7 +23,6 @@ bootloadhid
 borders
 brotli
 btop
-busted
 c-ares
 ca-certificates
 cairo
@@ -158,7 +157,6 @@ libvidstab
 libvmaf
 libvorbis
 libvpx
-libvterm
 libx11
 libxau
 libxcb
@@ -170,9 +168,7 @@ libxt
 libyaml
 libzip
 little-cms2
-lld
 lld@19
-llvm
 llvm@19
 lnav
 lolcat
@@ -196,7 +192,6 @@ mosh
 mpdecimal
 mpfr
 mpg123
-msgpack
 multitail
 ncurses
 neovim
@@ -241,7 +236,6 @@ protobuf
 pyenv
 pygments
 python-packaging
-python-setuptools
 python@3.13
 python@3.9
 qmk
@@ -310,7 +304,6 @@ yabai
 yarn
 yazi
 yq
-z3
 zeromq
 zig
 zimg

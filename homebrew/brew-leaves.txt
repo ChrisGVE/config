@@ -5,7 +5,6 @@ bat
 bat-extras
 black
 btop
-busted
 chafa
 chroma
 cmake
@@ -40,8 +39,6 @@ julia
 koekeishiya/formulae/yabai
 lazydocker
 lazygit
-libvterm
-lld
 lnav
 lolcat
 luarocks
@@ -49,7 +46,6 @@ markdown-toc
 markdownlint-cli2
 mas
 mosh
-msgpack
 multitail
 neovim
 netmute/tap/ctags-lsp
@@ -67,7 +63,6 @@ prettier
 prettierd
 pyenv
 pygments
-python-setuptools
 python@3.9
 qmk/qmk/qmk
 rage

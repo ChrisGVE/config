@@ -23,10 +23,6 @@ brew "python@3.13"
 brew "black"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
-# Powerful, lightweight programming language
-brew "lua"
-# Elegant Lua unit testing
-brew "busted"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
 # General purpose syntax highlighter in pure Go
@@ -101,6 +97,8 @@ brew "lazygit"
 brew "lnav"
 # Rainbows and unicorns in your console!
 brew "lolcat"
+# Powerful, lightweight programming language
+brew "lua"
 # Package manager for the Lua programming language
 brew "luarocks"
 # Platform built on V8 to build network applications
@@ -124,7 +122,7 @@ brew "ocaml"
 # Prompt theme engine for any shell
 brew "oh-my-posh"
 # Create, run, and share large language models (LLMs)
-brew "ollama", link: false
+brew "ollama"
 # OCaml package manager
 brew "opam"
 # Swiss-army knife of markup format conversion
