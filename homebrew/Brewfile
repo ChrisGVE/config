@@ -122,7 +122,7 @@ brew "ocaml"
 # Prompt theme engine for any shell
 brew "oh-my-posh"
 # Create, run, and share large language models (LLMs)
-brew "ollama"
+brew "ollama", restart_service: :changed
 # OCaml package manager
 brew "opam"
 # Swiss-army knife of markup format conversion
