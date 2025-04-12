@@ -13,6 +13,7 @@ composer
 deno
 direnv
 docutils
+expat
 fastfetch
 fd
 felixkratz/formulae/borders
