@@ -23,6 +23,8 @@ brew "black"
 brew "btop"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
 # General purpose syntax highlighter in pure Go
 brew "chroma"
 # Cross-platform make
@@ -171,6 +173,8 @@ brew "sphinx-doc"
 brew "sqlfluff"
 # Modern and pretty fancy file manager for the terminal
 brew "superfile"
+# Open source continuous file synchronization application
+brew "syncthing"
 # TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
 brew "tabiew"
 # Feature-rich console based todo list manager
@@ -361,6 +365,8 @@ cask "soundsource"
 cask "spamsieve"
 # Video game digital distribution service
 cask "steam"
+# Real time file synchronisation software
+cask "syncthing"
 # Spreadsheet style tag editor for audio files
 cask "tageditor"
 # Graphical user interface for TeX Live Manager

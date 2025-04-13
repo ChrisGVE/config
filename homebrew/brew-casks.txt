@@ -58,6 +58,7 @@ snagit
 soundsource
 spamsieve
 steam
+syncthing
 tageditor
 tex-live-utility
 texshop

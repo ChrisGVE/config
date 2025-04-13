@@ -6,6 +6,7 @@ bat-extras
 black
 btop
 chafa
+chezmoi
 chroma
 cmake
 cmake-docs
@@ -79,6 +80,7 @@ showkey
 sphinx-doc
 sqlfluff
 superfile
+syncthing
 tabiew
 taskopen
 taskwarrior-tui

@@ -28,6 +28,7 @@ ca-certificates
 cairo
 certifi
 chafa
+chezmoi
 chroma
 cjson
 clang-format
@@ -264,6 +265,7 @@ srt
 suite-sparse
 superfile
 svt-av1
+syncthing
 tabiew
 task
 taskopen
