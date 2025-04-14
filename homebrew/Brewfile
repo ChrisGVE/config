@@ -174,7 +174,7 @@ brew "sqlfluff"
 # Modern and pretty fancy file manager for the terminal
 brew "superfile"
 # Open source continuous file synchronization application
-brew "syncthing"
+brew "syncthing", link: false
 # TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
 brew "tabiew"
 # Feature-rich console based todo list manager
@@ -399,3 +399,63 @@ cask "wins"
 cask "zed"
 # Gecko based web browser
 cask "zen-browser"
+mas "1Password for Safari", id: 1569813296
+mas "Actions", id: 1586435171
+mas "AdBlock Pro", id: 1018301773
+mas "AdGuard for Safari", id: 1440147259
+mas "Affinity Designer 2", id: 1616831348
+mas "Aiko", id: 1672085276
+mas "Anybox", id: 1593408455
+mas "Audiobook Wizard", id: 460967298
+mas "AudioBookBinder", id: 413969927
+mas "BarMarks", id: 6739710035
+mas "Blackmagic Disk Speed Test", id: 425264550
+mas "Cardhop", id: 1290358394
+mas "Cheatsheet", id: 1468213484
+mas "Cityscapes", id: 1631153096
+mas "CleanMyDrive 2", id: 523620159
+mas "Coin Stats", id: 1387758574
+mas "CoinStats", id: 1498417304
+mas "Collections", id: 1568395334
+mas "Darkroom", id: 953286746
+mas "Data Jar", id: 1453273600
+mas "Deliveries", id: 924726344
+mas "Developer", id: 640199958
+mas "Encrypto", id: 935235287
+mas "Fantastical", id: 975937182
+mas "Flow", id: 1423210932
+mas "Focus", id: 777233759
+mas "FolderMarker", id: 1012940117
+mas "Goodnotes", id: 1444383602
+mas "Grammarly for Safari", id: 1462114288
+mas "Ground News", id: 1324203419
+mas "HP Smart", id: 1474276998
+mas "iA Writer", id: 775737590
+mas "IconizeFolder", id: 6478772538
+mas "iMovie", id: 408981434
+mas "Infuse", id: 1136220934
+mas "Keynote", id: 409183694
+mas "Kiwix", id: 997079563
+mas "Live Wallpaper", id: 531123879
+mas "MenuBox", id: 6463440793
+mas "NordVPN", id: 905953485
+mas "Notability", id: 360593530
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "PCalc", id: 403504866
+mas "Photomator", id: 1444636541
+mas "Reeder", id: 6475002485
+mas "Save to Medium", id: 1485294824
+mas "Scratchpad", id: 6504040051
+mas "Shazam", id: 897118787
+mas "Shortery", id: 1594183810
+mas "ShutterCount", id: 720123827
+mas "SimpleumSafe", id: 1547771496
+mas "Slack", id: 803453959
+mas "Speedtest", id: 1153157709
+mas "Texifier", id: 458866234
+mas "The Unarchiver", id: 425424353
+mas "Tot", id: 1491071483
+mas "Userscripts", id: 1463298887
+mas "WhatsApp", id: 310633997
+mas "Xcode", id: 497799835
