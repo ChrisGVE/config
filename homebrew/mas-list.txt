@@ -21,7 +21,7 @@
 924726344   Deliveries                  (3.2.4)
 640199958   Developer                   (10.7.2)
 935235287   Encrypto                    (1.4.3)
-975937182   Fantastical                 (4.0.7)
+975937182   Fantastical                 (4.0.8)
 1423210932  Flow                        (4.0.0)
 777233759   Focus                       (2025.1.4)
 1012940117  FolderMarker                (4.0)
