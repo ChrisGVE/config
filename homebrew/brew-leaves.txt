@@ -5,6 +5,7 @@ bat
 bat-extras
 black
 btop
+ccls
 chafa
 chezmoi
 chroma
@@ -32,6 +33,7 @@ gitui
 glow
 gnu-sed
 go
+gopls
 helix
 httrack
 hub
@@ -70,13 +72,13 @@ qmk/qmk/qmk
 rage
 reattach-to-user-namespace
 ripgrep
-ruby
 rust
 rust-analyzer
 rustc-completion
 sevenzip
 shfmt
 showkey
+solargraph
 sphinx-doc
 sqlfluff
 superfile

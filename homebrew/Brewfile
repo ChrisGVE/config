@@ -21,6 +21,8 @@ brew "python@3.13"
 brew "black"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# C/C++/ObjC language server
+brew "ccls"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
 # Manage your dotfiles across multiple diverse machines, securely
@@ -77,6 +79,8 @@ brew "glow"
 brew "gnu-sed"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Language server for the Go language
+brew "gopls"
 # Post-modern modal text editor
 brew "helix"
 # Website copier/offline browser
@@ -167,6 +171,8 @@ brew "sevenzip"
 brew "shfmt"
 # Simple keystroke visualizer
 brew "showkey"
+# Ruby language server
+brew "solargraph"
 # Tool to create intelligent and beautiful documentation
 brew "sphinx-doc"
 # SQL linter and auto-formatter for Humans

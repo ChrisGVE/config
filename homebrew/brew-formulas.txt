@@ -26,6 +26,7 @@ btop
 c-ares
 ca-certificates
 cairo
+ccls
 certifi
 chafa
 chezmoi
@@ -78,6 +79,7 @@ gnu-sed
 gnupg
 gnutls
 go
+gopls
 gpatch
 gpgme
 graphite2
@@ -170,6 +172,7 @@ libyaml
 libzip
 little-cms2
 lld@19
+llvm
 llvm@19
 lnav
 lolcat
@@ -257,6 +260,7 @@ shared-mime-info
 shfmt
 showkey
 snappy
+solargraph
 speex
 sphinx-doc
 sqlfluff
@@ -306,6 +310,7 @@ yabai
 yarn
 yazi
 yq
+z3
 zeromq
 zig
 zimg
