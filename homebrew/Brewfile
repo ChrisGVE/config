@@ -391,6 +391,8 @@ cask "transmit"
 cask "trezor-suite"
 # Keyboard configurator
 cask "via"
+# Configurator of compatible keyboards in real time
+cask "vial"
 # Multimedia player
 cask "vlc"
 # Remote desktop application focusing on security
