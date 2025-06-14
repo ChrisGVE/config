@@ -40,7 +40,7 @@ while read -r app; do
 	[[ "$app" == "" || "$app" =~ ^# ]] && continue
 	if [[ -d "/Applications/$app" ]]; then
 		echo "Preserving: $app"
-		cp -R "/Applications/$app" "$BACKUP_ROOT/Applications/"
+		sudo rsync -aHv --numeric-ids -l "/Applications/$app/" "$BACKUP_ROOT/Applications/$app"
 	else
 		echo "Warning: $app not found in /Applications" >&2
 	fi
