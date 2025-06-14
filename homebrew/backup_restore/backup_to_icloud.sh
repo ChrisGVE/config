@@ -11,6 +11,7 @@ BREWFILE="$BACKUP_ROOT/Brewfile"
 NONBREW_APPS="$BACKUP_ROOT/NonBrewApps.txt"
 KEEP_LIST="$BACKUP_ROOT/MustKeepApps.txt"
 UPLOAD_LOG="$BACKUP_ROOT/iCloudUploadStatus.log"
+OWNERSHIP_LOG="$BACKUP_ROOT/SystemBackup/ownership_records.txt"
 
 ### CREATE BACKUP FOLDER ###
 echo "Creating backup folder at $BACKUP_DIR..."
@@ -20,8 +21,9 @@ mkdir -p "$BACKUP_DIR"
 echo "Dumping Homebrew apps to $BREWFILE..."
 brew bundle dump --file="$BREWFILE" --force
 
-### LIST NON-BREW GUI APPS ###
-find /Applications -type d -name "*.app" -print |
+### LIST NON-BREW GUI APPS (recursive for Setapp etc.) ###
+echo "Listing non-Homebrew apps to $NONBREW_APPS..."
+find /Applications -type d -name "*.app" |
 	grep -v "/Cellar/" |
 	sort >"$NONBREW_APPS"
 
@@ -44,16 +46,63 @@ while read -r app; do
 	fi
 done <"$KEEP_LIST"
 
-### RSYNC HOME (excluding iCloud system data only) ###
-echo "Starting rsync of $HOME to $BACKUP_DIR..."
-rsync -avh \
+### BACKUP HOME TO Users_chris SUBFOLDER ###
+echo "Backing up $HOME to $BACKUP_DIR/Users_chris..."
+rsync -aHv --numeric-ids -l \
 	--exclude '.Trash' \
 	--exclude 'Library/Mobile Documents' \
 	--exclude 'Library/CloudStorage' \
 	--exclude 'Library/Application Support/CloudDocs' \
 	--exclude 'Library/SyncedPreferences' \
 	--exclude 'Library/Group Containers/*.icloud*' \
-	"$HOME/" "$BACKUP_DIR/"
+	"$HOME/" "$BACKUP_DIR/Users_chris/"
+
+### BACKUP /Users/Shared TO Users_Shared ###
+echo "Backing up /Users/Shared to $BACKUP_DIR/Users_Shared..."
+rsync -aHv --numeric-ids -l /Users/Shared/ "$BACKUP_DIR/Users_Shared/"
+
+### BACKUP SYSTEM-LEVEL FILES ###
+echo "Backing up system-level global folders..."
+mkdir -p "$BACKUP_ROOT/SystemBackup"
+
+# Save ownership metadata
+echo "Recording ownership for critical system folders..."
+find /Library /opt /usr/local /etc -exec stat -f "%u %g %N" {} + >"$OWNERSHIP_LOG" 2>/dev/null || true
+
+# Save additional environment and system info
+id -u >"$BACKUP_ROOT/SystemBackup/user_uid.txt"
+id -g >"$BACKUP_ROOT/SystemBackup/user_gid.txt"
+env >"$BACKUP_ROOT/SystemBackup/env_snapshot.txt"
+crontab -l >"$BACKUP_ROOT/SystemBackup/user_crontab.txt" 2>/dev/null || echo "No crontab set."
+system_profiler -detailLevel mini >"$BACKUP_ROOT/SystemBackup/system_profile.txt"
+pkgutil --pkgs >"$BACKUP_ROOT/SystemBackup/pkg_list.txt"
+
+# /Library/Application Support (filtered manually later)
+rsync -aHv --numeric-ids -l /Library/Application\ Support/ "$BACKUP_ROOT/SystemBackup/ApplicationSupport/"
+
+# Fonts
+rsync -aHv --numeric-ids -l /Library/Fonts/ "$BACKUP_ROOT/SystemBackup/Fonts/"
+
+# LaunchDaemons
+rsync -aHv --numeric-ids -l /Library/LaunchDaemons/ "$BACKUP_ROOT/SystemBackup/LaunchDaemons/"
+
+# Scripts
+[ -d /Library/Scripts ] && rsync -aHv --numeric-ids -l /Library/Scripts/ "$BACKUP_ROOT/SystemBackup/Scripts/"
+
+# QuickLook plugins
+[ -d /Library/QuickLook ] && rsync -aHv --numeric-ids -l /Library/QuickLook/ "$BACKUP_ROOT/SystemBackup/QuickLook/"
+
+# Audio plugins
+[ -d /Library/Audio ] && rsync -aHv --numeric-ids -l /Library/Audio/ "$BACKUP_ROOT/SystemBackup/Audio/"
+
+# /opt
+[ -d /opt ] && sudo tar --numeric-owner -czf "$BACKUP_ROOT/SystemBackup/opt.tar.gz" /opt
+
+# /usr/local
+[ -d /usr/local ] && sudo tar --numeric-owner -czf "$BACKUP_ROOT/SystemBackup/usr_local.tar.gz" /usr/local
+
+# selected /etc configs
+sudo tar --numeric-owner -czf "$BACKUP_ROOT/SystemBackup/etc_config.tar.gz" /etc/hosts /etc/ssh 2>/dev/null || echo "No /etc/ssh or /etc/hosts to archive."
 
 ### CHECK ICLOUD SYNC STATUS ###
 echo "Checking iCloud upload progress (this may take time)..."
