@@ -1,3 +1,4 @@
+tap "brewforge/extras"
 tap "felixkratz/formulae"
 tap "koekeishiya/formulae"
 tap "netmute/tap"
@@ -7,6 +8,8 @@ tap "qmk/qmk"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 # Simple, modern, secure file encryption
 brew "age"
+# AI pair programming in your terminal
+brew "aider"
 # Code searching, linting, rewriting
 brew "ast-grep"
 # Tool for generating GNU Standards-compliant Makefiles
@@ -19,6 +22,8 @@ brew "bat-extras"
 brew "python@3.13"
 # Python code formatter
 brew "black"
+# New way to see and navigate directory trees
+brew "broot"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
 # C/C++/ObjC language server
@@ -43,6 +48,8 @@ brew "composer"
 brew "deno"
 # Load/unload environment variables based on $PWD
 brew "direnv"
+# Tool for exploring each layer in a docker image
+brew "dive"
 # Text processing system for reStructuredText
 brew "docutils"
 # XML 1.0 parser
@@ -71,6 +78,8 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# TUI Git client inspired by Magit
+brew "gitu"
 # Blazing fast terminal-ui for git written in rust
 brew "gitui"
 # Render markdown on the CLI
@@ -81,12 +90,20 @@ brew "gnu-sed"
 brew "go"
 # Language server for the Go language
 brew "gopls"
+# Grammar Checker for Developers
+brew "harper"
 # Post-modern modal text editor
 brew "helix"
+# Bash and zsh history suggest box
+brew "hstr"
 # Website copier/offline browser
 brew "httrack"
 # Add GitHub support to git on the command-line
 brew "hub"
+# Client library for huggingface.co hub
+brew "huggingface-cli"
+# LLVM's OpenMP runtime library
+brew "libomp"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
@@ -99,6 +116,8 @@ brew "julia"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Terminal file manager
+brew "lf"
 # Curses-based tool for viewing and analyzing log files
 brew "lnav"
 # Rainbows and unicorns in your console!
@@ -115,10 +134,14 @@ brew "markdown-toc"
 brew "markdownlint-cli2"
 # Mac App Store command-line interface
 brew "mas"
+# Fast Cross-Platform Package Manager
+brew "micromamba"
 # Remote terminal application
 brew "mosh"
 # Tail multiple files in one terminal simultaneously
 brew "multitail"
+# NCurses Disk Usage
+brew "ncdu"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Modern shell for the GitHub era
@@ -171,6 +194,8 @@ brew "sevenzip"
 brew "shfmt"
 # Simple keystroke visualizer
 brew "showkey"
+# Fuzzy Finder in rust!
+brew "sk"
 # Ruby language server
 brew "solargraph"
 # Tool to create intelligent and beautiful documentation
@@ -180,7 +205,7 @@ brew "sqlfluff"
 # Modern and pretty fancy file manager for the terminal
 brew "superfile"
 # Open source continuous file synchronization application
-brew "syncthing", link: false
+brew "syncthing"
 # TUI to view and query tabular files (CSV,TSV, Parquet, etc.)
 brew "tabiew"
 # Feature-rich console based todo list manager
@@ -227,6 +252,8 @@ brew "yarn"
 brew "yazi"
 # Process YAML, JSON, XML, CSV and properties documents from the CLI
 brew "yq"
+# Feature-rich command-line audio/video downloader
+brew "yt-dlp"
 # Programming language designed for robustness, optimality, and clarity
 brew "zig"
 # Compression and file packaging/archive utility
@@ -275,6 +302,8 @@ cask "chronosync"
 cask "cork"
 # Disk space visualiser
 cask "daisydisk"
+# AI assistant
+cask "deepchat"
 # Assistant for efficient web searches
 cask "devonagent"
 # Collect, organise, edit and annotate documents
@@ -305,6 +334,8 @@ cask "google-chrome"
 cask "google-drive"
 # Grammarly for desktop
 cask "grammarly-desktop"
+# Desktop automation application
+cask "hammerspoon"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Optimise and personalise your Jabra headset
@@ -406,7 +437,7 @@ cask "wins"
 # Multiplayer code editor
 cask "zed"
 # Gecko based web browser
-cask "zen-browser"
+cask "zen"
 mas "1Password for Safari", id: 1569813296
 mas "Actions", id: 1586435171
 mas "AdBlock Pro", id: 1018301773
@@ -418,6 +449,7 @@ mas "Audiobook Wizard", id: 460967298
 mas "AudioBookBinder", id: 413969927
 mas "BarMarks", id: 6739710035
 mas "Blackmagic Disk Speed Test", id: 425264550
+mas "Brother P-touch Editor", id: 1453365242
 mas "Cardhop", id: 1290358394
 mas "Cheatsheet", id: 1468213484
 mas "Cityscapes", id: 1631153096
@@ -467,3 +499,37 @@ mas "Tot", id: 1491071483
 mas "Userscripts", id: 1463298887
 mas "WhatsApp", id: 310633997
 mas "Xcode", id: 497799835
+vscode "asvetliakov.vscode-neovim"
+vscode "catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc-icons"
+vscode "catppuccin.catppuccin-vsc-pack"
+vscode "codeium.windsurfpyright"
+vscode "esbenp.prettier-vscode"
+vscode "fill-labs.dependi"
+vscode "franneck94.vscode-rust-config"
+vscode "github.vscode-pull-request-github"
+vscode "golang.go"
+vscode "hbenl.vscode-test-explorer"
+vscode "johnnymorganz.stylua"
+vscode "kevingamer3d2.selene-vscode"
+vscode "levrotech.zig-znippets"
+vscode "lyonsyonii.rust-syntax"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-toolsai.jupyter"
+vscode "ms-toolsai.jupyter-keymap"
+vscode "ms-toolsai.jupyter-renderers"
+vscode "ms-toolsai.vscode-jupyter-cell-tags"
+vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode.go"
+vscode "ms-vscode.test-adapter-converter"
+vscode "pinage404.rust-extension-pack"
+vscode "redhat.vscode-xml"
+vscode "redhat.vscode-yaml"
+vscode "rust-lang.rust-analyzer"
+vscode "shivamkumar.go-extras"
+vscode "sumneko.lua"
+vscode "swellaby.vscode-rust-test-adapter"
+vscode "tamasfe.even-better-toml"
+vscode "ziglang.vscode-zig"

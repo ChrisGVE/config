@@ -9,6 +9,7 @@ calibre
 chronosync
 cork
 daisydisk
+deepchat
 devonagent
 devonthink
 discord
@@ -25,6 +26,7 @@ gimp
 google-chrome
 google-drive
 grammarly-desktop
+hammerspoon
 iterm2
 jabra-direct
 jordanbaird-ice
@@ -75,4 +77,5 @@ vscodium
 wezterm
 wins
 zed
+zen
 zen-browser

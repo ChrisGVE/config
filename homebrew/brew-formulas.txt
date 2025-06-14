@@ -1,5 +1,6 @@
 abseil
 age
+aider
 aom
 apr
 apr-util
@@ -21,6 +22,7 @@ black
 boost
 bootloadhid
 borders
+broot
 brotli
 btop
 c-ares
@@ -28,6 +30,7 @@ ca-certificates
 cairo
 ccls
 certifi
+cffi
 chafa
 chezmoi
 chroma
@@ -44,6 +47,7 @@ deno
 dfu-programmer
 dfu-util
 direnv
+dive
 docutils
 expat
 fastfetch
@@ -54,6 +58,7 @@ file-formula
 findent
 fish
 flac
+fmt
 fontconfig
 freetds
 freetype
@@ -71,6 +76,8 @@ ghostscript
 giflib
 git
 git-delta
+git-lfs
+gitu
 gitui
 glib
 glow
@@ -84,12 +91,15 @@ gpatch
 gpgme
 graphite2
 harfbuzz
+harper
 helix
 hid_bootloader_cli
 hidapi
 highway
+hstr
 httrack
 hub
+huggingface-cli
 icu4c@76
 icu4c@77
 imagemagick
@@ -107,6 +117,7 @@ lame
 lazydocker
 lazygit
 leptonica
+lf
 libarchive
 libass
 libassuan
@@ -145,6 +156,7 @@ libsamplerate
 libsm
 libsndfile
 libsodium
+libsolv
 libsoxr
 libssh
 libssh2
@@ -191,12 +203,14 @@ mas
 mbedtls
 mdloader
 metis
+micromamba
 miniupnpc
 mosh
 mpdecimal
 mpfr
 mpg123
 multitail
+ncdu
 ncurses
 neovim
 net-snmp
@@ -205,6 +219,7 @@ node
 npth
 nspr
 nss
+numpy
 nushell
 ocaml
 oh-my-posh
@@ -237,9 +252,11 @@ poppler
 prettier
 prettierd
 protobuf
+pycparser
 pyenv
 pygments
 python-packaging
+python@3.12
 python@3.13
 python@3.9
 qmk
@@ -247,6 +264,7 @@ rage
 rav1e
 readline
 reattach-to-user-namespace
+reproc
 ripgrep
 rtmpdump
 rubberband
@@ -254,11 +272,14 @@ ruby
 rust
 rust-analyzer
 rustc-completion
+scipy
 sdl2
 sevenzip
 shared-mime-info
 shfmt
 showkey
+simdjson
+sk
 snappy
 solargraph
 speex
@@ -304,12 +325,15 @@ x265
 xclip
 xorgproto
 xsel
+xsimd
 xvid
 xz
 yabai
+yaml-cpp
 yarn
 yazi
 yq
+yt-dlp
 z3
 zeromq
 zig
