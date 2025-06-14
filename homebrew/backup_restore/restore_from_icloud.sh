@@ -14,11 +14,11 @@ OWNERSHIP_LOG="$BACKUP_ROOT/SystemBackup/ownership_records.txt"
 
 ### RESTORE HOME DATA ###
 echo "Restoring home directory from $BACKUP_DIR/Users_chris to $HOME..."
-rsync -aHv --numeric-ids -l "$BACKUP_DIR/Users_chris/" "$HOME/"
+rsync -aH --info=progress2 --numeric-ids -l "$BACKUP_DIR/Users_chris/" "$HOME/"
 
 ### RESTORE /Users/Shared ###
 echo "Restoring /Users/Shared from backup..."
-sudo rsync -aHv --numeric-ids -l "$BACKUP_DIR/Users_Shared/" /Users/Shared/
+sudo rsync -aH --info=progress2 --numeric-ids -l "$BACKUP_DIR/Users_Shared/" /Users/Shared/
 
 ### RESTORE MUST-KEEP .apps ###
 echo "Restoring preserved applications (if any)..."
