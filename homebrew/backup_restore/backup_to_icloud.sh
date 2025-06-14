@@ -5,7 +5,8 @@
 set -euo pipefail
 
 ### SETTINGS ###
-BACKUP_ROOT="$HOME/Library/Mobile Documents/com~apple~CloudDocs/MacDowngradeBackup"
+# BACKUP_ROOT="$HOME/Library/Mobile Documents/com~apple~CloudDocs/MacDowngradeBackup"
+BACKUP_ROOT="/Volumes/OWC Mercury/MacDowngradeBackup"
 BACKUP_DIR="$BACKUP_ROOT/HomeBackup"
 BREWFILE="$BACKUP_ROOT/Brewfile"
 NONBREW_APPS="$BACKUP_ROOT/NonBrewApps.txt"
