@@ -41,11 +41,17 @@ fi
 echo "Restoring Homebrew packages from Brewfile..."
 brew bundle --file="$BREWFILE"
 
-### REAPPLY OWNERSHIP (optional) ###
-echo "Restoring ownership for system files (dry run)..."
+### REAPPLY OWNERSHIP (automated) ###
+echo "Reapplying ownership for system files (automated)..."
 if [[ -f "$OWNERSHIP_LOG" ]]; then
-	echo "Ownership records found. To reapply:
-  sudo chown <uid>:<gid> <path> for each line in $OWNERSHIP_LOG"
+	while read -r uid gid path; do
+		if [[ -e "$path" ]]; then
+			echo "sudo chown $uid:$gid \"$path\""
+			sudo chown $uid:$gid "$path"
+		else
+			echo "Warning: Path not found, skipping: $path"
+		fi
+	done <"$OWNERSHIP_LOG"
 else
 	echo "No ownership log found; skipping ownership restoration."
 fi
