@@ -1,0 +1,142 @@
+1Password for Safari.app
+1Password.app
+Actions.app
+AdBlock Pro.app
+AdGuard for Safari.app
+Adobe Acrobat Reader.app
+Affinity Designer 2.app
+Alfred 5.app
+Anybox.app
+Anytype.app
+Autopano Giga 4.4.app
+Blackmagic Disk Speed Test.app
+Camtasia 3.app
+Cardhop.app
+Cheatsheet.app
+ChronoSync.app
+Citrix Workspace.app
+Cityscapes.app
+Claude.app
+CleanMyDrive 2.app
+Collections.app
+DaisyDisk.app
+Darkroom.app
+Data Jar.app
+Deliveries.app
+Developer.app
+DEVONagent.app
+DEVONthink 3.app
+Discord.app
+DriveDx.app
+Dropbox.app
+DXOPhotoLab8.app
+Encrypto.app
+Epic Games Launcher.app
+Exodus.app
+Fantastical.app
+Firefox.app
+Flow.app
+Focus.app
+FolderMarker.app
+Fork.app
+G-RAID Studio Configurator.app
+G-SPEED Studio Software Utility.app
+Goodnotes.app
+Google Chrome.app
+Google Drive.app
+Grammarly Desktop.app
+Grammarly for Safari.app
+Ground News.app
+Hammerspoon.app
+Hoppi.app
+HP Prime.app
+HP Smart.app
+iA Writer.app
+Ice.app
+IconizeFolder.app
+iMovie.app
+Infuse.app
+iTerm.app
+Jabra Direct.app
+Jabra Firmware Update.app
+Karabiner-Elements.app
+Karabiner-EventViewer.app
+Keyboard Maestro.app
+KeyCue.app
+Keynote.app
+Kiwix.app
+Kraken Desktop.app
+logioptionsplus.app
+Logseq.app
+LuLu.app
+MacPaw Hider 2.app
+MenuBox.app
+Moom.app
+NETGEAR Discovery Tool.app
+NordVPN.app
+Notability.app
+Notion.app
+Numbers.app
+Obsidian.app
+Ollamac.app
+OMNI Keygen.app
+OmniFocus.app
+OmniGraffle.app
+OmniOutliner.app
+OmniPlan.app
+OWC Dock Ejector.app
+P-touch Editor.app
+Pages.app
+Parallels Desktop.app
+Parallels Toolbox.app
+PCalc.app
+Photo Mechanic 6.app
+Photomatix Pro 7.app
+Photomator.app
+PhotoSweeper X.app
+Pixelmator Pro.app
+PlistEdit Pro.app
+Plus42 Decimal.app
+PowerPhotos.app
+QMK Toolbox.app
+Raspberry Pi Imager.app
+Reeder.app
+RightFont.app
+Save to Medium.app
+Scratchpad.app
+Setapp.app
+SF Symbols.app
+Shazam.app
+Shortery.app
+ShutterCount.app
+SimpleumSafe.app
+Slack.app
+Snagit.app
+SoundSource.app
+SpamSieve.app
+Speedtest.app
+Steam.app
+Syncthing.app
+Tag Editor.app
+Texifier.app
+The Unarchiver.app
+Thunderbird.app
+Topaz Gigapixel AI.app
+Topaz Photo AI.app
+Tot.app
+TradingView.app
+Transmission.app
+Transmit.app
+Trezor Suite.app
+Twilight.app
+Userscripts.app
+VIA.app
+Vial.app
+VLC.app
+VNC Viewer.app
+WezTerm.app
+WhatsApp.app
+Wins.app
+Xcode.app
+Zed.app
+Zen Browser.app

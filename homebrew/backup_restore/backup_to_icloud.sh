@@ -9,7 +9,7 @@ BACKUP_ROOT="$HOME/Library/Mobile Documents/com~apple~CloudDocs/MacDowngradeBack
 BACKUP_DIR="$BACKUP_ROOT/HomeBackup"
 BREWFILE="$BACKUP_ROOT/Brewfile"
 NONBREW_APPS="$BACKUP_ROOT/NonBrewApps.txt"
-KEEP_LIST="$BACKUP_ROOT/MustKeepApps.txt"
+KEEP_LIST="MustKeepApps.txt"
 UPLOAD_LOG="$BACKUP_ROOT/iCloudUploadStatus.log"
 OWNERSHIP_LOG="$BACKUP_ROOT/SystemBackup/ownership_records.txt"
 
@@ -28,10 +28,10 @@ find /Applications -type d -name "*.app" |
 	sort >"$NONBREW_APPS"
 
 ### ADD MUST-KEEP APP PLACEHOLDER ###
-echo "Creating editable list of apps to preserve fully..."
-echo "# List full .app names (e.g., Obsidian.app) one per line" >"$KEEP_LIST"
-echo "# These will be preserved as-is from /Applications during backup" >>"$KEEP_LIST"
-echo >>"$KEEP_LIST"
+# echo "Creating editable list of apps to preserve fully..."
+# echo "# List full .app names (e.g., Obsidian.app) one per line" >"$KEEP_LIST"
+# echo "# These will be preserved as-is from /Applications during backup" >>"$KEEP_LIST"
+# echo >>"$KEEP_LIST"
 
 ### COPY MUST-KEEP .apps ###
 echo "Copying must-keep apps (if any)..."
