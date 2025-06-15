@@ -13,20 +13,21 @@ NONBREW_APPS="$BACKUP_ROOT/NonBrewApps.txt"
 KEEP_LIST="MustKeepApps.txt"
 UPLOAD_LOG="$BACKUP_ROOT/iCloudUploadStatus.log"
 OWNERSHIP_LOG="$BACKUP_ROOT/SystemBackup/ownership_records.txt"
+RSYNC=/usr/local/bin/rsync
 
 ### CREATE BACKUP FOLDER ###
-# echo "Creating backup folder at $BACKUP_DIR..."
-# mkdir -p "$BACKUP_DIR"
+echo "Creating backup folder at $BACKUP_DIR..."
+mkdir -p "$BACKUP_DIR"
 
 ### DUMP HOMEBREW APPS LIST ###
-# echo "Dumping Homebrew apps to $BREWFILE..."
-# brew bundle dump --file="$BREWFILE" --force
+echo "Dumping Homebrew apps to $BREWFILE..."
+brew bundle dump --file="$BREWFILE" --force
 
 ### LIST NON-BREW GUI APPS (recursive for Setapp etc.) ###
-# echo "Listing non-Homebrew apps to $NONBREW_APPS..."
-# find /Applications -type d -name "*.app" |
-# 	grep -v "/Cellar/" |
-# 	sort >"$NONBREW_APPS"
+echo "Listing non-Homebrew apps to $NONBREW_APPS..."
+find /Applications -type d -name "*.app" |
+	grep -v "/Cellar/" |
+	sort >"$NONBREW_APPS"
 
 ### ADD MUST-KEEP APP PLACEHOLDER ###
 # echo "Creating editable list of apps to preserve fully..."
@@ -35,21 +36,21 @@ OWNERSHIP_LOG="$BACKUP_ROOT/SystemBackup/ownership_records.txt"
 # echo >>"$KEEP_LIST"
 
 ### COPY MUST-KEEP .apps ###
-# echo "Copying must-keep apps (if any)..."
-# mkdir -p "$BACKUP_ROOT/Applications"
-# while read -r app; do
-# 	[[ "$app" == "" || "$app" =~ ^# ]] && continue
-# 	if [[ -d "/Applications/$app" ]]; then
-# 		echo "Preserving: $app"
-# 		sudo rsync -aH --progress --numeric-ids -l "/Applications/$app/" "$BACKUP_ROOT/Applications/$app"
-# 	else
-# 		echo "Warning: $app not found in /Applications" >&2
-# 	fi
-# done <"$KEEP_LIST"
+echo "Copying must-keep apps (if any)..."
+mkdir -p "$BACKUP_ROOT/Applications"
+while read -r app; do
+	[[ "$app" == "" || "$app" =~ ^# ]] && continue
+	if [[ -d "/Applications/$app" ]]; then
+		echo "Preserving: $app"
+		sudo $RSYNC -aH --progress --numeric-ids -l "/Applications/$app/" "$BACKUP_ROOT/Applications/$app"
+	else
+		echo "Warning: $app not found in /Applications" >&2
+	fi
+done <"$KEEP_LIST"
 
 ### BACKUP HOME TO Users_chris SUBFOLDER ###
 echo "Backing up $HOME to $BACKUP_DIR/Users_chris..."
-sudo rsync -aHv --progress --numeric-ids -l \
+sudo $RSYNC -aHv --progress --numeric-ids -l \
 	--exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' \
 	--exclude '.Trash' \
 	--exclude 'Library/Mobile Documents' \
@@ -61,7 +62,7 @@ sudo rsync -aHv --progress --numeric-ids -l \
 
 ### BACKUP /Users/Shared TO Users_Shared ###
 echo "Backing up /Users/Shared to $BACKUP_DIR/Users_Shared..."
-sudo rsync -aH --progress --numeric-ids -l /Users/Shared/ "$BACKUP_DIR/Users_Shared/"
+sudo $RSYNC -aH --progress --numeric-ids -l /Users/Shared/ "$BACKUP_DIR/Users_Shared/"
 
 ### BACKUP SYSTEM-LEVEL FILES ###
 echo "Backing up system-level global folders..."
@@ -80,22 +81,22 @@ system_profiler -detailLevel mini >"$BACKUP_ROOT/SystemBackup/system_profile.txt
 pkgutil --pkgs >"$BACKUP_ROOT/SystemBackup/pkg_list.txt"
 
 # /Library/Application Support (filtered manually later)
-sudo rsync -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/Application\ Support/ "$BACKUP_ROOT/SystemBackup/ApplicationSupport/"
+sudo $RSYNC -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/Application\ Support/ "$BACKUP_ROOT/SystemBackup/ApplicationSupport/"
 
 # Fonts
-sudo rsync -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/Fonts/ "$BACKUP_ROOT/SystemBackup/Fonts/"
+sudo $RSYNC -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/Fonts/ "$BACKUP_ROOT/SystemBackup/Fonts/"
 
 # LaunchDaemons
-sudo rsync -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/LaunchDaemons/ "$BACKUP_ROOT/SystemBackup/LaunchDaemons/"
+sudo $RSYNC -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/LaunchDaemons/ "$BACKUP_ROOT/SystemBackup/LaunchDaemons/"
 
 # Scripts
-[ -d /Library/Scripts ] && sudo rsync -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/Scripts/ "$BACKUP_ROOT/SystemBackup/Scripts/"
+[ -d /Library/Scripts ] && sudo $RSYNC -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/Scripts/ "$BACKUP_ROOT/SystemBackup/Scripts/"
 
 # QuickLook plugins
-[ -d /Library/QuickLook ] && sudo rsync -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/QuickLook/ "$BACKUP_ROOT/SystemBackup/QuickLook/"
+[ -d /Library/QuickLook ] && sudo $RSYNC -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/QuickLook/ "$BACKUP_ROOT/SystemBackup/QuickLook/"
 
 # Audio plugins
-[ -d /Library/Audio ] && sudo rsync -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/Audio/ "$BACKUP_ROOT/SystemBackup/Audio/"
+[ -d /Library/Audio ] && sudo $RSYNC -aH --progress --numeric-ids --exclude='*.sock' --exclude='/private/tmp/' --exclude='/var/run/' --exclude='.*/.*.sock' -l /Library/Audio/ "$BACKUP_ROOT/SystemBackup/Audio/"
 
 # /opt
 [ -d /opt ] && sudo tar --numeric-owner -czf "$BACKUP_ROOT/SystemBackup/opt.tar.gz" /opt
