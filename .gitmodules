@@ -7,3 +7,6 @@
 [submodule "bat"]
 	path = bat
 	url = git@github.com:ChrisGVE/config.bat.git
+[submodule "qdrant/qdrant-web-ui"]
+	path = qdrant/qdrant-web-ui
+	url = https://github.com/qdrant/qdrant-web-ui.git
