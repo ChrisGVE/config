@@ -81,6 +81,10 @@ brew "folderify"
 brew "fzf"
 # Fast, simple fuzzy text selector with an advanced scoring algorithm
 brew "fzy"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Interact with Google Gemini AI models from the command-line
+brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -127,8 +131,6 @@ brew "lsd"
 brew "lua"
 # Package manager for the Lua programming language
 brew "luarocks"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node"
 # Generate a markdown TOC (table of contents) with Remarkable
 brew "markdown-toc"
 # Fast, flexible, config-based cli for linting Markdown/CommonMark files
@@ -281,6 +283,8 @@ cask "1password-cli"
 cask "bibdesk"
 # E-books management software
 cask "calibre"
+# OpenAI's coding agent that runs in your terminal
+cask "codex"
 # AI assistant
 cask "deepchat"
 cask "font-hack-nerd-font"

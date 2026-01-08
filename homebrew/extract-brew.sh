@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/usr/bin/env zsh
 
 # Extracts the list installed brew formulae/casks to a file
 #

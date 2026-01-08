@@ -75,6 +75,7 @@ gcc
 gd
 gdbm
 gdk-pixbuf
+gemini-cli
 gettext
 gflags
 gh

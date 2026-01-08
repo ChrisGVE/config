@@ -28,6 +28,7 @@ findent
 folderify
 fzf
 fzy
+gemini-cli
 gh
 git
 git-delta
