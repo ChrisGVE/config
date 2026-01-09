@@ -304,8 +304,6 @@ cask "iterm2"
 cask "karabiner-elements"
 # Graphical interface for LaTeX
 cask "latexit"
-# Privacy-first, open-source platform for knowledge sharing and management
-cask "logseq"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
 # Minimal installer for conda

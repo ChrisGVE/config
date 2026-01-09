@@ -13,7 +13,6 @@ hammerspoon
 iterm2
 karabiner-elements
 latexit
-logseq
 mactex
 miniconda
 qmk-toolbox
