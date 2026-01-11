@@ -86,7 +86,6 @@ rustup
 sevenzip
 shfmt
 solargraph
-specstoryai/tap/specstory
 sphinx-doc
 sqlfluff
 superfile

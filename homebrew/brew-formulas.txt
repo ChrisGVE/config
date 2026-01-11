@@ -307,7 +307,6 @@ shfmt
 simdjson
 snappy
 solargraph
-specstory
 speex
 sphinx-doc
 sqlfluff

@@ -275,8 +275,6 @@ brew "koekeishiya/formulae/yabai"
 brew "osx-cross/avr/avr-gcc@8"
 # Quantum Mechanical Keyboard (QMK) Firmware
 brew "qmk/qmk/qmk"
-# A claude code wrapper that saves your conversation history to markdown
-brew "specstoryai/tap/specstory"
 # Command-line interface for 1Password
 cask "1password-cli"
 # Edit and manage bibliographies
