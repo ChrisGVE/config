@@ -97,6 +97,8 @@ timewarrior
 tmux
 transmission-cli
 tree
+tree-sitter
+tree-sitter-cli
 trippy
 uv
 viu

@@ -229,6 +229,10 @@ brew "tmux"
 brew "transmission-cli", restart_service: :changed
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Incremental parsing library
+brew "tree-sitter"
+# Parser generator tool
+brew "tree-sitter-cli"
 # Network diagnostic tool, inspired by mtr
 brew "trippy"
 # Extremely fast Python package installer and resolver, written in Rust
