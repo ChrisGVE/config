@@ -18,7 +18,7 @@
  640199958  Developer                   (10.8.3)
 1171346381  Easy CSV Editor             (2.64)
  935235287  Encrypto                    (1.4.3)
- 975937182  Fantastical                 (4.1.5)
+ 975937182  Fantastical                 (4.1.7)
 1444383602  Goodnotes                   (7.0.22)
 1324203419  Ground News                 (3.0.4)
 1474276998  HP                          (20.2)
