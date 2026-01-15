@@ -44,7 +44,7 @@
 1485294824  Save to Medium              (1.0)
 6504040051  Scratchpad                  (1.3.7)
  897118787  Shazam                      (2.11.0)
-1594183810  Shortery                    (8.2)
+1594183810  Shortery                    (8.4)
  720123827  ShutterCount                (7.0)
 1547771496  SimpleumSafe                (3.7.8)
  803453959  Slack                       (4.47.72)
