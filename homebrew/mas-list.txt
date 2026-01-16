@@ -1,4 +1,4 @@
-1569813296  1Password for Safari        (8.11.27)
+1569813296  1Password for Safari        (8.11.29)
 6737921844  Acorn                       (8.3.3)
 1586435171  Actions                     (3.8.0)
 1672085276  Aiko                        (1.9.2)
