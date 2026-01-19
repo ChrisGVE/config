@@ -65,7 +65,7 @@ brew "expat"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Play, record, convert, and stream audio and video
+# Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
@@ -73,7 +73,7 @@ brew "figlet"
 brew "file-formula"
 # Indent and beautify Fortran sources and generate dependency information
 brew "findent"
-# Tools and libraries to manipulate images in many formats
+# Tools and libraries to manipulate images in select formats
 brew "imagemagick"
 # Generate pixel-perfect macOS folder icons in the native style
 brew "folderify"
