@@ -1,6 +1,7 @@
 1password-cli
 bibdesk
 calibre
+claudebar
 codex
 deepchat
 font-hack-nerd-font
