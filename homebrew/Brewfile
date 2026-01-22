@@ -247,6 +247,8 @@ brew "wget"
 brew "wordnet"
 # Access X11 clipboards from the command-line
 brew "xclip"
+# Swift tool to parse xcodebuild output for coding agents
+brew "xcsift"
 # Command-line program for getting and setting the contents of the X selection
 brew "xsel"
 # JavaScript package manager

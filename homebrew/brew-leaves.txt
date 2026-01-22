@@ -106,6 +106,7 @@ vttest
 wget
 wordnet
 xclip
+xcsift
 xsel
 yarn
 yazi

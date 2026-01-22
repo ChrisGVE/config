@@ -352,6 +352,7 @@ wordnet
 x264
 x265
 xclip
+xcsift
 xorgproto
 xsel
 xvid
