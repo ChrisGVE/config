@@ -287,6 +287,8 @@ cask "1password-cli"
 cask "bibdesk"
 # E-books management software
 cask "calibre"
+# Anthropic's official Claude AI desktop app
+cask "claude"
 # Menu bar app for monitoring AI coding assistant usage quotas
 cask "claudebar"
 # OpenAI's coding agent that runs in your terminal

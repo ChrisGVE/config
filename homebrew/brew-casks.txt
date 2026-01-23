@@ -1,6 +1,7 @@
 1password-cli
 bibdesk
 calibre
+claude
 claudebar
 codex
 deepchat
