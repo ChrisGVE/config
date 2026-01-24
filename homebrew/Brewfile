@@ -115,6 +115,8 @@ brew "httrack"
 brew "hub"
 # Client library for huggingface.co hub
 brew "huggingface-cli"
+# Command-line benchmarking tool
+brew "hyperfine"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Lazier way to manage everything docker
@@ -235,6 +237,8 @@ brew "tree-sitter"
 brew "tree-sitter-cli"
 # Network diagnostic tool, inspired by mtr
 brew "trippy"
+# Interactive SQL shell for Turso
+brew "turso"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 # Simple terminal image viewer written in Rust
@@ -283,6 +287,8 @@ brew "osx-cross/avr/avr-gcc@8"
 brew "qmk/qmk/qmk"
 # Command-line interface for 1Password
 cask "1password-cli"
+# Data backup and storage service
+cask "backblaze"
 # Edit and manage bibliographies
 cask "bibdesk"
 # E-books management software

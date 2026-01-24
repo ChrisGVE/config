@@ -43,6 +43,7 @@ hstr
 httrack
 hub
 huggingface-cli
+hyperfine
 jq
 koekeishiya/formulae/yabai
 lazydocker
@@ -100,6 +101,7 @@ tree
 tree-sitter
 tree-sitter-cli
 trippy
+turso
 uv
 viu
 vttest

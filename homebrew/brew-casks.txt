@@ -1,4 +1,5 @@
 1password-cli
+backblaze
 bibdesk
 calibre
 claude

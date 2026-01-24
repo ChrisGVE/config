@@ -110,6 +110,7 @@ httrack
 hub
 huggingface-cli
 hwloc
+hyperfine
 icu4c@77
 icu4c@78
 imagemagick
@@ -334,6 +335,7 @@ tree-sitter
 tree-sitter-cli
 tree-sitter@0.25
 trippy
+turso
 unbound
 unibilium
 universal-ctags
