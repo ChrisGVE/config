@@ -244,6 +244,7 @@ oh-my-posh
 ollama
 oniguruma
 onnx
+onnxruntime
 opam
 openblas
 opencode
@@ -291,6 +292,7 @@ qtdeclarative
 qtsvg
 rage
 rav1e
+re2
 readline
 reattach-to-user-namespace
 ripgrep
