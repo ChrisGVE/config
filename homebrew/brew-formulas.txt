@@ -140,6 +140,7 @@ libassuan
 libavif
 libb2
 libbluray
+libdatrie
 libde265
 libdeflate
 libevent
@@ -178,6 +179,7 @@ libsoxr
 libssh
 libssh2
 libtasn1
+libthai
 libtiff
 libtool
 libudfread
@@ -248,7 +250,6 @@ oh-my-posh
 ollama
 oniguruma
 onnx
-onnxruntime
 opam
 openblas
 opencode
@@ -296,7 +297,6 @@ qtdeclarative
 qtsvg
 rage
 rav1e
-re2
 readline
 reattach-to-user-namespace
 ripgrep

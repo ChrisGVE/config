@@ -62,7 +62,6 @@ ocaml
 ocrmypdf
 oh-my-posh
 ollama
-onnxruntime
 opam
 opencode
 opencv
