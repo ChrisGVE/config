@@ -63,7 +63,6 @@ ocrmypdf
 oh-my-posh
 ollama
 opam
-opencode
 opencv
 pandoc
 perl
@@ -73,7 +72,6 @@ pnpm
 poppler
 prettier
 prettierd
-pydantic
 pyenv
 pygments
 python@3.12

@@ -149,6 +149,8 @@ brew "utf8proc", args: ["HEAD"]
 brew "neovim"
 # General purpose programming language in the ML family
 brew "ocaml"
+# Data validation using Python type hints
+brew "pydantic"
 # Adds an OCR text layer to scanned PDF files
 brew "ocrmypdf"
 # Prompt theme engine for any shell
@@ -157,10 +159,6 @@ brew "oh-my-posh"
 brew "ollama", restart_service: :changed
 # OCaml package manager
 brew "opam"
-# Search tool like grep and The Silver Searcher
-brew "ripgrep"
-# AI coding agent, built for the terminal
-brew "opencode"
 # Open source computer vision library
 brew "opencv"
 # Swiss-army knife of markup format conversion
@@ -179,8 +177,6 @@ brew "poppler"
 brew "prettier"
 # Prettier daemon
 brew "prettierd"
-# Data validation using Python type hints
-brew "pydantic"
 # Python version management
 brew "pyenv"
 # Generic syntax highlighter
@@ -193,6 +189,8 @@ brew "python@3.13"
 brew "rage"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Experimental Rust compiler front-end for IDEs
