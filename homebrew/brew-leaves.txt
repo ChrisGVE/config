@@ -22,6 +22,7 @@ exiftool
 expat
 fastfetch
 fd
+felixkratz/formulae/borders
 figlet
 file-formula
 findent
