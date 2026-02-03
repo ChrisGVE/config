@@ -125,6 +125,7 @@ jansson
 jasper
 jbig2dec
 jbig2enc
+jdtls
 jpeg-turbo
 jpeg-xl
 jq
@@ -214,6 +215,7 @@ lolcat
 lpeg
 lsd
 lua
+lua-language-server
 luajit
 luarocks
 luv
@@ -253,9 +255,11 @@ oniguruma
 onnx
 opam
 openblas
+opencode
 opencore-amr
 opencv
 openexr
+openjdk
 openjpeg
 openjph
 openldap
@@ -287,6 +291,7 @@ pycparser
 pydantic
 pyenv
 pygments
+pyright
 python@3.12
 python@3.13
 python@3.14
@@ -322,6 +327,7 @@ srt
 suite-sparse
 superfile
 svt-av1
+swift
 tabiew
 task
 taskopen
@@ -342,6 +348,8 @@ tree-sitter-cli
 tree-sitter@0.25
 trippy
 turso
+typescript
+typescript-language-server
 unbound
 unibilium
 universal-ctags

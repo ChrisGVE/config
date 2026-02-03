@@ -45,6 +45,7 @@ httrack
 hub
 huggingface-cli
 hyperfine
+jdtls
 jq
 koekeishiya/formulae/yabai
 lazydocker
@@ -52,6 +53,7 @@ lazygit
 lnav
 lolcat
 lsd
+lua-language-server
 luarocks
 markdown-toc
 markdownlint-cli2
@@ -64,6 +66,7 @@ ocrmypdf
 oh-my-posh
 ollama
 opam
+opencode
 opencv
 pandoc
 perl
@@ -75,6 +78,7 @@ prettier
 prettierd
 pyenv
 pygments
+pyright
 python@3.12
 python@3.13
 qmk/qmk/qmk
@@ -89,6 +93,7 @@ solargraph
 sphinx-doc
 sqlfluff
 superfile
+swift
 tabiew
 taskopen
 taskwarrior-tui
@@ -101,6 +106,7 @@ tree-sitter
 tree-sitter-cli
 trippy
 turso
+typescript-language-server
 uv
 viu
 vttest
