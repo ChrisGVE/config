@@ -161,6 +161,8 @@ brew "ocrmypdf"
 brew "oh-my-posh"
 # Create, run, and share large language models (LLMs)
 brew "ollama", restart_service: :changed
+# Cross-platform, high performance scoring engine for ML models
+brew "onnxruntime"
 # OCaml package manager
 brew "opam"
 # Search tool like grep and The Silver Searcher
@@ -346,6 +348,8 @@ cask "syncthing-app"
 cask "tex-live-utility"
 # LaTeX and TeX editor and previewer
 cask "texshop"
+# Create, maintain, and interact with Xcode projects at scale
+cask "tuist"
 # Keyboard configurator
 cask "via"
 # Configurator of compatible keyboards in real time

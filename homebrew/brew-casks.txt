@@ -24,6 +24,7 @@ sf-symbols
 syncthing-app
 tex-live-utility
 texshop
+tuist
 via
 vial
 vlc
