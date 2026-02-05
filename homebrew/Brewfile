@@ -161,8 +161,6 @@ brew "ocrmypdf"
 brew "oh-my-posh"
 # Create, run, and share large language models (LLMs)
 brew "ollama", restart_service: :changed
-# Cross-platform, high performance scoring engine for ML models
-brew "onnxruntime"
 # OCaml package manager
 brew "opam"
 # Search tool like grep and The Silver Searcher
@@ -311,8 +309,6 @@ cask "bibdesk"
 cask "calibre"
 # Anthropic's official Claude AI desktop app
 cask "claude"
-# Menu bar app for monitoring AI coding assistant usage quotas
-cask "claudebar"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
 # AI assistant

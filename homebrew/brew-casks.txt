@@ -4,7 +4,6 @@ backblaze
 bibdesk
 calibre
 claude
-claudebar
 codex
 deepchat
 font-hack-nerd-font
