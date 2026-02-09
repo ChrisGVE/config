@@ -20,7 +20,7 @@
  935235287  Encrypto                    (1.4.3)
  975937182  Fantastical                 (4.1.7)
 1631624924  Final Cut Pro               (12.0)
-1444383602  Goodnotes                   (7.0.30)
+1444383602  Goodnotes                   (7.0.32)
 1324203419  Ground News                 (3.0.4)
 1474276998  HP                          (20.2)
  775737590  iA Writer                   (7.3.3)
