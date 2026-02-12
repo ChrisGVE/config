@@ -50,9 +50,6 @@ jq
 koekeishiya/formulae/yabai
 lazydocker
 lazygit
-liblqr
-libraw
-libultrahdr
 lnav
 lolcat
 lsd

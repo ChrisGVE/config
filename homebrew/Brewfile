@@ -311,8 +311,6 @@ cask "calibre"
 cask "claude"
 # OpenAI's coding agent that runs in your terminal
 cask "codex"
-# AI assistant
-cask "deepchat"
 cask "font-hack-nerd-font"
 cask "font-sf-mono-nerd-font-ligaturized"
 cask "font-symbols-only-nerd-font"
@@ -330,6 +328,8 @@ cask "iterm2"
 cask "karabiner-elements"
 # Graphical interface for LaTeX
 cask "latexit"
+# System monitoring dashboard with historical analytics
+cask "macpulse"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
 # Minimal installer for conda
@@ -340,6 +340,8 @@ cask "qmk-toolbox"
 cask "sf-symbols"
 # Real time file synchronisation software
 cask "syncthing-app"
+# Native GUI for Homebrew package management
+cask "taphouse"
 # Graphical user interface for TeX Live Manager
 cask "tex-live-utility"
 # LaTeX and TeX editor and previewer

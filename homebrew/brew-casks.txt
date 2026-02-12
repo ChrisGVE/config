@@ -5,7 +5,6 @@ bibdesk
 calibre
 claude
 codex
-deepchat
 font-hack-nerd-font
 font-sf-mono-nerd-font-ligaturized
 font-symbols-only-nerd-font
@@ -16,11 +15,13 @@ hammerspoon
 iterm2
 karabiner-elements
 latexit
+macpulse
 mactex
 miniconda
 qmk-toolbox
 sf-symbols
 syncthing-app
+taphouse
 tex-live-utility
 texshop
 tuist

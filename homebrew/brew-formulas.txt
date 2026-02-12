@@ -122,7 +122,6 @@ imath
 img2pdf
 isl
 jansson
-jasper
 jbig2dec
 jbig2enc
 jdtls
@@ -158,7 +157,6 @@ libidn
 libidn2
 libimagequant
 libksba
-liblqr
 libmagic
 libmicrohttpd
 libmpc
@@ -170,7 +168,6 @@ libomp
 libpng
 libpq
 libraqm
-libraw
 librist
 librsvg
 libsamplerate
@@ -185,7 +182,6 @@ libthai
 libtiff
 libtool
 libudfread
-libultrahdr
 libunibreak
 libunistring
 libusb
