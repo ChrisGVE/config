@@ -153,6 +153,7 @@ libgpg-error
 libharu
 libheif
 libice
+libiconv
 libidn
 libidn2
 libimagequant
@@ -302,6 +303,7 @@ readline
 reattach-to-user-namespace
 ripgrep
 rsync
+rtk
 rtmpdump
 rubberband
 ruby

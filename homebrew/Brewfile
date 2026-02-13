@@ -5,6 +5,7 @@ tap "netmute/tap"
 tap "osx-cross/arm"
 tap "osx-cross/avr"
 tap "qmk/qmk"
+tap "rtk-ai/tap"
 tap "shaunsingh/sfmono-nerd-font-ligaturized"
 tap "specstoryai/tap"
 # Simple, modern, secure file encryption
@@ -297,6 +298,8 @@ brew "koekeishiya/formulae/yabai"
 brew "osx-cross/avr/avr-gcc@8"
 # Quantum Mechanical Keyboard (QMK) Firmware
 brew "qmk/qmk/qmk"
+# Rust Token Killer - High-performance CLI proxy to minimize LLM token consumption
+brew "rtk-ai/tap/rtk"
 # Command-line interface for 1Password
 cask "1password-cli"
 # Automatic tiling window manager similar to xmonad
@@ -328,8 +331,6 @@ cask "iterm2"
 cask "karabiner-elements"
 # Graphical interface for LaTeX
 cask "latexit"
-# System monitoring dashboard with historical analytics
-cask "macpulse"
 # Full TeX Live distribution with GUI applications
 cask "mactex"
 # Minimal installer for conda
@@ -340,8 +341,6 @@ cask "qmk-toolbox"
 cask "sf-symbols"
 # Real time file synchronisation software
 cask "syncthing-app"
-# Native GUI for Homebrew package management
-cask "taphouse"
 # Graphical user interface for TeX Live Manager
 cask "tex-live-utility"
 # LaTeX and TeX editor and previewer

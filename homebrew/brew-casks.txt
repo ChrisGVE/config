@@ -15,13 +15,11 @@ hammerspoon
 iterm2
 karabiner-elements
 latexit
-macpulse
 mactex
 miniconda
 qmk-toolbox
 sf-symbols
 syncthing-app
-taphouse
 tex-live-utility
 texshop
 tuist
