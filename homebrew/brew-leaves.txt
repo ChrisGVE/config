@@ -85,6 +85,7 @@ qmk/qmk/qmk
 rage
 reattach-to-user-namespace
 rtk-ai/tap/rtk
+rtmpdump
 rust-analyzer
 rustc-completion
 rustup
