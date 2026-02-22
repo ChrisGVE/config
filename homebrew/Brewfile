@@ -132,6 +132,8 @@ brew "lnav"
 brew "lolcat"
 # Clone of ls with colorful output, file type icons, and more
 brew "lsd"
+# LTeX+ Language Server: maintained fork of LTeX Language Server
+brew "ltex-ls-plus"
 # Powerful, lightweight programming language
 brew "lua"
 # Language Server for the Lua language
@@ -292,8 +294,6 @@ brew "zsh-history-substring-search"
 brew "zsh-vi-mode"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
-# A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai"
 # GNU compiler collection for AVR 8-bit and 32-bit Microcontrollers
 brew "osx-cross/avr/avr-gcc@8"
 # Quantum Mechanical Keyboard (QMK) Firmware

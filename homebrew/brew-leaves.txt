@@ -47,12 +47,12 @@ huggingface-cli
 hyperfine
 jdtls
 jq
-koekeishiya/formulae/yabai
 lazydocker
 lazygit
 lnav
 lolcat
 lsd
+ltex-ls-plus
 lua-language-server
 luarocks
 markdown-toc
@@ -85,7 +85,6 @@ qmk/qmk/qmk
 rage
 reattach-to-user-namespace
 rtk-ai/tap/rtk
-rtmpdump
 rust-analyzer
 rustc-completion
 rustup
