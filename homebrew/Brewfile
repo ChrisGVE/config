@@ -32,6 +32,8 @@ brew "gcc"
 brew "libomp"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
+# TUI web browser with CSS, inline image and JavaScript support
+brew "chawan"
 # General purpose syntax highlighter in pure Go
 brew "chroma"
 # Cut, copy, and paste anything, anywhere, all from the terminal
@@ -66,6 +68,8 @@ brew "expat"
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Text mode browser and Gemini, NNTP, FTP, Gopher, Finger, and BitTorrent client
+brew "felinks"
 # Play, record, convert, and stream select audio and video codecs
 brew "ffmpeg"
 # Banner-like program prints strings as ASCII art
@@ -126,6 +130,8 @@ brew "jq"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# SIXEL encoder/decoder implementation
+brew "libsixel"
 # Curses-based tool for viewing and analyzing log files
 brew "lnav"
 # Rainbows and unicorns in your console!

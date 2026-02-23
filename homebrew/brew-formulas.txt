@@ -34,6 +34,7 @@ certifi
 cffi
 cgns
 chafa
+chawan
 chroma
 cjson
 clang-format
@@ -60,6 +61,7 @@ exiftool
 expat
 fastfetch
 fd
+felinks
 ffmpeg
 figlet
 file-formula
@@ -141,9 +143,11 @@ libassuan
 libavif
 libb2
 libbluray
+libcss
 libdatrie
 libde265
 libdeflate
+libdom
 libevent
 libftdi
 libgcrypt
@@ -152,6 +156,7 @@ libgit2@1.8
 libgpg-error
 libharu
 libheif
+libhubbub
 libice
 libiconv
 libidn
@@ -166,12 +171,14 @@ libnghttp3
 libngtcp2
 libogg
 libomp
+libparserutils
 libpng
 libpq
 libraqm
 librist
 librsvg
 libsamplerate
+libsixel
 libsm
 libsndfile
 libsodium
@@ -192,6 +199,7 @@ libvidstab
 libvmaf
 libvorbis
 libvpx
+libwapcaplet
 libx11
 libxau
 libxcb
@@ -340,6 +348,7 @@ tidy-html5
 timewarrior
 tmux
 transmission-cli
+tre
 tree
 tree-sitter
 tree-sitter-cli

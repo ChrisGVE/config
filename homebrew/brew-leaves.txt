@@ -8,6 +8,7 @@ bookokrat
 btop
 ccls
 chafa
+chawan
 chroma
 clipboard
 cmake
@@ -22,6 +23,7 @@ exiftool
 expat
 fastfetch
 fd
+felinks
 felixkratz/formulae/borders
 figlet
 file-formula
@@ -49,6 +51,7 @@ jdtls
 jq
 lazydocker
 lazygit
+libsixel
 lnav
 lolcat
 lsd
