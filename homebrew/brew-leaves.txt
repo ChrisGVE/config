@@ -51,6 +51,8 @@ jdtls
 jq
 lazydocker
 lazygit
+lazyjournal
+lazysql
 libsixel
 lnav
 lolcat

@@ -130,6 +130,10 @@ brew "jq"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# TUI for logs from journalctl, file system, Docker, Podman and Kubernetes pods
+brew "lazyjournal"
+# Cross-platform TUI database management tool
+brew "lazysql"
 # SIXEL encoder/decoder implementation
 brew "libsixel"
 # Curses-based tool for viewing and analyzing log files
