@@ -1,4 +1,6 @@
+acsandmann/tap/rift
 age
+arimxyer/tap/models
 ast-grep
 automake
 bat
@@ -13,7 +15,9 @@ chroma
 clipboard
 cmake
 cmake-docs
+context7-mcp
 coreutils
+csvlens
 ctags-lsp
 direnv
 dive
@@ -21,6 +25,7 @@ docutils
 dos2unix
 exiftool
 expat
+eza
 fastfetch
 fd
 felinks
@@ -36,11 +41,11 @@ gh
 git
 git-delta
 git-filter-repo
-github-mcp-server
 glow
 gnu-sed
 go
 gopls
+gromgit/brewtils/taproom
 harper
 hstr
 httrack
@@ -54,6 +59,7 @@ lazygit
 lazyjournal
 lazysql
 libsixel
+llmfit
 lnav
 lolcat
 lsd
@@ -115,6 +121,7 @@ turso
 typescript-language-server
 uv
 viu
+vivid
 vttest
 wget
 wordnet

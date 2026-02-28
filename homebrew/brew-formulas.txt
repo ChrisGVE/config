@@ -42,8 +42,10 @@ clipboard
 cmake
 cmake-docs
 confuse
+context7-mcp
 coreutils
 cryptography
+csvlens
 ctags-lsp
 curl
 dav1d
@@ -59,6 +61,7 @@ double-conversion
 eigen
 exiftool
 expat
+eza
 fastfetch
 fd
 felinks
@@ -90,7 +93,6 @@ git
 git-delta
 git-filter-repo
 git-lfs
-github-mcp-server
 glew
 glib
 glog
@@ -215,6 +217,7 @@ libzip
 little-cms2
 lld@20
 llhttp
+llmfit
 llvm
 llvm@20
 lnav
@@ -239,6 +242,7 @@ md4c
 mdloader
 metis
 miniupnpc
+models
 mosh
 mpdecimal
 mpfr
@@ -312,6 +316,7 @@ rage
 rav1e
 readline
 reattach-to-user-namespace
+rift
 ripgrep
 rsync
 rtk
@@ -337,6 +342,7 @@ superfile
 svt-av1
 swift
 tabiew
+taproom
 task
 taskopen
 taskwarrior-tui
@@ -369,6 +375,7 @@ utf8proc
 uv
 uvwasi
 viu
+vivid
 vtk
 vttest
 webp

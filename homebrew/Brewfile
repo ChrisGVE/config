@@ -1,5 +1,8 @@
+tap "acsandmann/tap"
+tap "arimxyer/tap"
 tap "brewforge/extras"
 tap "felixkratz/formulae"
+tap "gromgit/brewtils"
 tap "koekeishiya/formulae"
 tap "netmute/tap"
 tap "osx-cross/arm"
@@ -42,8 +45,14 @@ brew "clipboard"
 brew "cmake"
 # Documentation for CMake
 brew "cmake-docs"
+# Open-source, cross-platform JavaScript runtime environment
+brew "node"
+# Up-to-date code documentation for LLMs and AI code editors
+brew "context7-mcp"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Command-line csv viewer
+brew "csvlens"
 # Maintained ctags implementation
 brew "universal-ctags"
 # LSP implementation using universal-ctags as backend
@@ -64,6 +73,8 @@ brew "dos2unix"
 brew "exiftool"
 # XML 1.0 parser
 brew "expat"
+# Modern, maintained replacement for ls
+brew "eza"
 # Like neofetch, but much faster because written mostly in C
 brew "fastfetch"
 # Simple, fast and user-friendly alternative to find
@@ -86,8 +97,6 @@ brew "folderify"
 brew "fzf"
 # Fast, simple fuzzy text selector with an advanced scoring algorithm
 brew "fzy"
-# Open-source, cross-platform JavaScript runtime environment
-brew "node"
 # Interact with Google Gemini AI models from the command-line
 brew "gemini-cli"
 # GitHub command-line tool
@@ -100,8 +109,6 @@ brew "git-delta"
 brew "git-filter-repo"
 # Git extension for versioning large files
 brew "git-lfs"
-# GitHub Model Context Protocol server for AI tools
-brew "github-mcp-server"
 # Render markdown on the CLI
 brew "glow"
 # GNU implementation of the famous stream editor
@@ -136,6 +143,8 @@ brew "lazyjournal"
 brew "lazysql"
 # SIXEL encoder/decoder implementation
 brew "libsixel"
+# Find what models run on your hardware
+brew "llmfit"
 # Curses-based tool for viewing and analyzing log files
 brew "lnav"
 # Rainbows and unicorns in your console!
@@ -266,6 +275,8 @@ brew "typescript-language-server"
 brew "uv"
 # Simple terminal image viewer written in Rust
 brew "viu"
+# Generator for LS_COLORS with support for multiple color themes
+brew "vivid"
 # Test compatibility of VT100-compatible terminals
 brew "vttest"
 # Internet file retriever
@@ -302,8 +313,14 @@ brew "zsh-fast-syntax-highlighting"
 brew "zsh-history-substring-search"
 # Better and friendly vi(vim) mode plugin for ZSH
 brew "zsh-vi-mode"
+# Tiling window manager for macOS
+brew "acsandmann/tap/rift"
+# Fast CLI and TUI for browsing AI model information from models.dev
+brew "arimxyer/tap/models"
 # A window border system for macOS
 brew "felixkratz/formulae/borders"
+# Interactive TUI for Homebrew
+brew "gromgit/brewtils/taproom"
 # GNU compiler collection for AVR 8-bit and 32-bit Microcontrollers
 brew "osx-cross/avr/avr-gcc@8"
 # Quantum Mechanical Keyboard (QMK) Firmware
