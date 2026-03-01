@@ -366,6 +366,8 @@ cask "miniconda"
 cask "qmk-toolbox"
 # Tool that provides consistent, highly configurable symbols for apps
 cask "sf-symbols"
+# Screenshot measurement and annotation tool
+cask "shottr"
 # Real time file synchronisation software
 cask "syncthing-app"
 # Graphical user interface for TeX Live Manager

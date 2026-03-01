@@ -19,6 +19,7 @@ mactex
 miniconda
 qmk-toolbox
 sf-symbols
+shottr
 syncthing-app
 tex-live-utility
 texshop
