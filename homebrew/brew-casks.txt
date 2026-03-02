@@ -1,10 +1,8 @@
 1password-cli
-amethyst
 backblaze
 bibdesk
 calibre
 claude
-codex
 font-hack-nerd-font
 font-sf-mono-nerd-font-ligaturized
 font-symbols-only-nerd-font

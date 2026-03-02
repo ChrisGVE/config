@@ -41,6 +41,12 @@ brew "chawan"
 brew "chroma"
 # Cut, copy, and paste anything, anywhere, all from the terminal
 brew "clipboard"
+# GNU CLISP, a Common Lisp implementation
+brew "clisp"
+# Dynamic, general-purpose programming language
+brew "clojure"
+# Language Server (LSP) for Clojure
+brew "clojure-lsp"
 # Cross-platform make
 brew "cmake"
 # Documentation for CMake
@@ -69,6 +75,10 @@ brew "dive"
 brew "docutils"
 # Convert text between DOS, UNIX, and Mac formats
 brew "dos2unix"
+# Functional metaprogramming aware language built on Erlang VM
+brew "elixir"
+# Language Server and Debugger for Elixir
+brew "elixir-ls"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # XML 1.0 parser
@@ -93,14 +103,18 @@ brew "findent"
 brew "imagemagick"
 # Generate pixel-perfect macOS folder icons in the native style
 brew "folderify"
+# Language Server for Fortran
+brew "fortran-language-server"
+# Free Pascal: multi-architecture Pascal compiler
+brew "fpc"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Fast, simple fuzzy text selector with an advanced scoring algorithm
 brew "fzy"
-# Interact with Google Gemini AI models from the command-line
-brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
+# Glorious Glasgow Haskell Compilation System
+brew "ghc"
 # Distributed revision control system
 brew "git"
 # Syntax-highlighting pager for git and diff output
@@ -119,6 +133,10 @@ brew "go"
 brew "gopls"
 # Grammar Checker for Developers
 brew "harper"
+# Integration point for ghcide and haskell-ide-engine. One IDE to rule them all
+brew "haskell-language-server"
+# Cross-platform program for developing Haskell projects
+brew "haskell-stack"
 # Bash and zsh history suggest box
 brew "hstr"
 # Website copier/offline browser
@@ -129,6 +147,8 @@ brew "hub"
 brew "huggingface-cli"
 # Command-line benchmarking tool
 brew "hyperfine"
+# Parser generator for use with Java applications
+brew "javacc"
 # Java language specific implementation of the Language Server Protocol
 brew "jdtls"
 # Lightweight and flexible command-line JSON processor
@@ -179,6 +199,8 @@ brew "ocaml"
 brew "pydantic"
 # Adds an OCR text layer to scanned PDF files
 brew "ocrmypdf"
+# Programming language with focus on simplicity, performance and modern systems
+brew "odin"
 # Prompt theme engine for any shell
 brew "oh-my-posh"
 # Create, run, and share large language models (LLMs)
@@ -223,12 +245,16 @@ brew "rage"
 brew "reattach-to-user-namespace"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
+# Opinionated language server for Ruby
+brew "ruby-lsp"
 # Experimental Rust compiler front-end for IDEs
 brew "rust-analyzer"
 # Bash completion for rustc
 brew "rustc-completion"
 # Rust toolchain installer
 brew "rustup"
+# JVM-based programming language
+brew "scala"
 # 7-Zip is a file archiver with a high compression ratio
 brew "sevenzip"
 # Autoformat shell script source code
@@ -329,8 +355,6 @@ brew "qmk/qmk/qmk"
 brew "rtk-ai/tap/rtk"
 # Command-line interface for 1Password
 cask "1password-cli"
-# Automatic tiling window manager similar to xmonad
-cask "amethyst"
 # Data backup and storage service
 cask "backblaze"
 # Edit and manage bibliographies
@@ -339,8 +363,6 @@ cask "bibdesk"
 cask "calibre"
 # Anthropic's official Claude AI desktop app
 cask "claude"
-# OpenAI's coding agent that runs in your terminal
-cask "codex"
 cask "font-hack-nerd-font"
 cask "font-sf-mono-nerd-font-ligaturized"
 cask "font-symbols-only-nerd-font"
@@ -400,8 +422,6 @@ mas "Brother P-touch Editor", id: 1453365242
 mas "Cardhop", id: 1290358394
 mas "Cheatsheet", id: 1468213484
 mas "CleanMyDrive 2", id: 523620159
-mas "Coin Stats", id: 1387758574
-mas "CoinStats", id: 1498417304
 mas "Collections", id: 1568395334
 mas "Darkroom", id: 953286746
 mas "Data Jar", id: 1453273600
@@ -409,7 +429,6 @@ mas "Developer", id: 640199958
 mas "Easy CSV Editor", id: 1171346381
 mas "Encrypto", id: 935235287
 mas "Fantastical", id: 975937182
-mas "Final Cut Pro", id: 1631624924
 mas "Goodnotes", id: 1444383602
 mas "Ground News", id: 1324203419
 mas "HP", id: 1474276998
@@ -419,8 +438,6 @@ mas "iMovie", id: 408981434
 mas "Infuse", id: 1136220934
 mas "JSON Editor", id: 567740330
 mas "Keynote", id: 361285480
-mas "Kiwix", id: 997079563
-mas "Logic Pro", id: 1615087040
 mas "MenuBox", id: 6463440793
 mas "NoNoise", id: 6755174608
 mas "NordVPN", id: 905953485
@@ -437,7 +454,6 @@ mas "Save to Medium", id: 1485294824
 mas "Scratchpad", id: 6504040051
 mas "Shazam", id: 897118787
 mas "Shortery", id: 1594183810
-mas "ShutterCount", id: 720123827
 mas "SimpleumSafe", id: 1547771496
 mas "Slack", id: 803453959
 mas "Speedtest", id: 1153157709

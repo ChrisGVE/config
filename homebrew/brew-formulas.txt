@@ -39,6 +39,9 @@ chroma
 cjson
 clang-format
 clipboard
+clisp
+clojure
+clojure-lsp
 cmake
 cmake-docs
 confuse
@@ -59,6 +62,9 @@ docutils
 dos2unix
 double-conversion
 eigen
+elixir
+elixir-ls
+erlang
 exiftool
 expat
 eza
@@ -73,6 +79,8 @@ flac
 fmt
 folderify
 fontconfig
+fortran-language-server
+fpc
 freetds
 freetype
 frei0r
@@ -83,10 +91,10 @@ gcc
 gd
 gdbm
 gdk-pixbuf
-gemini-cli
 gettext
 gflags
 gh
+ghc
 ghostscript
 giflib
 git
@@ -94,6 +102,7 @@ git-delta
 git-filter-repo
 git-lfs
 glew
+glfw
 glib
 glog
 glow
@@ -108,6 +117,8 @@ gpgmepp
 graphite2
 harfbuzz
 harper
+haskell-language-server
+haskell-stack
 hdf5
 hdrhistogram_c
 hid_bootloader_cli
@@ -126,6 +137,7 @@ imath
 img2pdf
 isl
 jansson
+javacc
 jbig2dec
 jbig2enc
 jdtls
@@ -153,6 +165,7 @@ libde265
 libdeflate
 libdom
 libevent
+libffcall
 libftdi
 libgcrypt
 libgit2
@@ -178,10 +191,12 @@ libomp
 libparserutils
 libpng
 libpq
+libptytty
 libraqm
 librist
 librsvg
 libsamplerate
+libsigsegv
 libsixel
 libsm
 libsndfile
@@ -216,10 +231,12 @@ libyaml
 libzip
 little-cms2
 lld@20
+lld@21
 llhttp
 llmfit
 llvm
 llvm@20
+llvm@21
 lnav
 lolcat
 lpeg
@@ -261,6 +278,7 @@ nss
 numpy
 ocaml
 ocrmypdf
+odin
 oh-my-posh
 ollama
 oniguruma
@@ -314,17 +332,21 @@ qtdeclarative
 qtsvg
 rage
 rav1e
+raylib
 readline
 reattach-to-user-namespace
 rift
 ripgrep
+rlwrap
 rsync
 rtk
 rubberband
 ruby
+ruby-lsp
 rust-analyzer
 rustc-completion
 rustup
+scala
 sdl2
 sevenzip
 shared-mime-info
@@ -381,6 +403,7 @@ vttest
 webp
 wget
 wordnet
+wxwidgets@3.2
 x264
 x265
 xclip

@@ -13,6 +13,9 @@ chafa
 chawan
 chroma
 clipboard
+clisp
+clojure
+clojure-lsp
 cmake
 cmake-docs
 context7-mcp
@@ -23,6 +26,7 @@ direnv
 dive
 docutils
 dos2unix
+elixir-ls
 exiftool
 expat
 eza
@@ -34,10 +38,12 @@ figlet
 file-formula
 findent
 folderify
+fortran-language-server
+fpc
 fzf
 fzy
-gemini-cli
 gh
+ghc
 git
 git-delta
 git-filter-repo
@@ -47,11 +53,14 @@ go
 gopls
 gromgit/brewtils/taproom
 harper
+haskell-language-server
+haskell-stack
 hstr
 httrack
 hub
 huggingface-cli
 hyperfine
+javacc
 jdtls
 jq
 lazydocker
@@ -74,6 +83,7 @@ multitail
 neovim
 ocaml
 ocrmypdf
+odin
 oh-my-posh
 ollama
 opam
@@ -96,9 +106,11 @@ qmk/qmk/qmk
 rage
 reattach-to-user-namespace
 rtk-ai/tap/rtk
+ruby-lsp
 rust-analyzer
 rustc-completion
 rustup
+scala
 sevenzip
 shfmt
 solargraph
