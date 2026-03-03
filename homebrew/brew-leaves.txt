@@ -20,6 +20,7 @@ cmake
 cmake-docs
 context7-mcp
 coreutils
+cpanminus
 csvlens
 ctags-lsp
 direnv
@@ -75,6 +76,7 @@ lsd
 ltex-ls-plus
 lua-language-server
 luarocks
+mariadb
 markdown-toc
 markdownlint-cli2
 mas

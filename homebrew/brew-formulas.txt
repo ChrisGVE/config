@@ -47,6 +47,7 @@ cmake-docs
 confuse
 context7-mcp
 coreutils
+cpanminus
 cryptography
 csvlens
 ctags-lsp
@@ -115,6 +116,7 @@ gopls
 gpgme
 gpgmepp
 graphite2
+groonga
 harfbuzz
 harper
 haskell-language-server
@@ -251,12 +253,15 @@ lz4
 lzo
 m4
 make
+mariadb
 markdown-toc
 markdownlint-cli2
 mas
 mbedtls@3
 md4c
 mdloader
+mecab
+mecab-ipadic
 metis
 miniupnpc
 models
@@ -264,6 +269,7 @@ mosh
 mpdecimal
 mpfr
 mpg123
+msgpack
 multitail
 ncurses
 neovim
@@ -281,6 +287,7 @@ ocrmypdf
 odin
 oh-my-posh
 ollama
+onigmo
 oniguruma
 onnx
 opam
@@ -315,6 +322,7 @@ prettier
 prettierd
 proj
 protobuf
+protobuf@33
 pugixml
 pybind11
 pycparser
