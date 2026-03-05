@@ -54,7 +54,7 @@ brew "cmake-docs"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # Up-to-date code documentation for LLMs and AI code editors
-brew "context7-mcp"
+brew "context7-mcp", link: false
 # GNU File, Shell, and Text utilities
 brew "coreutils"
 # Get, unpack, build, and install modules from CPAN

@@ -44,7 +44,6 @@
  897118787  Shazam                      (2.11.0)
 1594183810  Shortery                    (8.6)
 1547771496  SimpleumSafe                (3.7.9)
- 803453959  Slack                       (4.48.95)
 1006087419  SnippetsLab                 (2.6.4)
 1153157709  Speedtest                   (1.27)
  458866234  Texifier                    (1.9.33)
