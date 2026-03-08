@@ -23,6 +23,7 @@ syncthing-app
 tex-live-utility
 texshop
 tuist
+ubar
 via
 vial
 vlc

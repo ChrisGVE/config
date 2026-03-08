@@ -404,6 +404,8 @@ cask "tex-live-utility"
 cask "texshop"
 # Create, maintain, and interact with Xcode projects at scale
 cask "tuist"
+# Window manager and productivity tool
+cask "ubar"
 # Keyboard configurator
 cask "via"
 # Configurator of compatible keyboards in real time
